@@ -1,17 +1,17 @@
-# Nome do projeto
+# Name a Game
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+O projeto Name a Game tem o objetivo de ajudar pessoas a encontrarem o jogo ideal para cada gosto e vontades do momento. A página terá várias funcionalidades, como um catálago de jogos para ajudar a encontrar o melhor preço entre as diversas lojas virtuais. Assim, o projeto vai suprir uma demanda entre os _gamers_ que gastam muito tempo procurando o jogo e, consequentemente, tendo menos tempo para jogar.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
+* Augusto Stambassi Duarte  
+* Alexandre Von de Graaf
+* João Vitor dos Reis Soares
 * Nome completo do aluno 4
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
+* Hayala Nepomuceno Curto
 * Nome completo do professor 2
 
 ## Instruções de utilização
