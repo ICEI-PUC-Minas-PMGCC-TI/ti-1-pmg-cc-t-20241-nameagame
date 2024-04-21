@@ -58,7 +58,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 ## Público-Alvo
 
 Como dito anteriormente, o projeto tem como alvo os _gamers_, público alvo hoje que se torna bem abrangente. Por isso, realizamos uma pesquisa por meio de um formulário para garantir um número maior e distinto de pessoas, e assim entendermos melhor o público-alvo. Formamos então um grupo seleto de personas, como pode se ver abaixo:
-<img src="/docs/assets/img/persona1.png">
+<img src="/docs/assets/images/persona1.png">
 
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
 
