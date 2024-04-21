@@ -34,7 +34,7 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 
 ## Objetivos
 O objetivo do projeto é criar um software capaz de apresentar um jogo ideal para a pessoa de maneira rápida e eficiente, de acordo com as vontades do momento e suas preferências pré estabelecidas.
-Além disso, parte como objetivo do projeto auxiliar os consumidores a acharem o melhor preço dos jogos ideias, como também mostrar outras opções baseadas em estúdios de jogos e gêneros prediletos.
+Além disso, parte como objetivo específico do projeto auxiliar os consumidores a acharem o melhor preço dos jogos ideias, como também mostrar outras opções baseadas em estúdios de jogos e gêneros prediletos.
 
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
 
@@ -43,6 +43,9 @@ Aqui você deve descrever os objetivos do trabalho indicando que o objetivo gera
 - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
+
+O tema do projeto foi escolhido por ser algo que a maioria do grupo vivência e, por isso, temos a noção do quanto este projeto poderia impactar positivamente a comunidade dos jogadores, de sua forma mais diversa, seja ampliando a quantidade daquels que jogam, ou seja fazendo as pessoas encontrarem um novo jogo favorito, sendo benéfico para todos, desde quem joga até quem produz.
+
 
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
@@ -53,6 +56,9 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
+
+Como dito anteriormente, o projeto tem como alvo os _gamers_, público alvo hoje que se torna bem abrangente. Por isso, realizamos uma pesquisa por meio de um formulário para garantir um número maior e distinto de pessoas, e assim entendermos melhor o público-alvo. Formamos então um grupo seleto de personas, como pode se ver abaixo:
+
 
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
 
