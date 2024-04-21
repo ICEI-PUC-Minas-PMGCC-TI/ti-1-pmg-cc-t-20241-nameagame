@@ -20,6 +20,8 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
+O problema encontrado pela nossa equipe foram primáriamente dois: A dificuldade de se achar o jogo ideal a ser jogado e o tempo que é gasto para acha-lo. Tal problema é voltado ao consumidor de jogos eletrônicos, abrangindo um diverso grupo de pessoas, e ,portanto, a aplicação será no uso doméstico do site.
+
 Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
 
 Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
@@ -31,6 +33,8 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
+O objetivo do projeto é criar um software capaz de apresentar um jogo ideal para a pessoa de maneira rápida e eficiente, de acordo com as vontades do momento e suas preferências pré estabelecidas.
+Além disso, parte como objetivo do projeto auxiliar os consumidores a acharem o melhor preço dos jogos ideias, como também mostrar outras opções baseadas em estúdios de jogos e gêneros prediletos.
 
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
 
