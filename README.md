@@ -7,8 +7,9 @@ O projeto Name a Game tem o objetivo de ajudar pessoas a encontrarem o jogo idea
 * Augusto Stambassi Duarte  
 * Alexandre Von de Graaf
 * João Vitor dos Reis Soares
-* Nome completo do aluno 4
-
+* Fabiano Vitor Patrício Eleutério
+* Igor Gabriel Guimarães Lima
+   
 ## Professores responsáveis
 
 * Hayala Nepomuceno Curto
