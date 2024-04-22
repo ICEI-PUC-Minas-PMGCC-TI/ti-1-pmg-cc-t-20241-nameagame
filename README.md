@@ -5,7 +5,7 @@ O projeto Name a Game tem o objetivo de ajudar pessoas a encontrarem o jogo idea
 ## Alunos integrantes da equipe
 
 * Augusto Stambassi Duarte  
-* Alexandre Von de Graaf
+* Alexandre Van de Graaf
 * João Vitor dos Reis Soares
 * Fabiano Vitor Patrício Eleutério
 * Igor Gabriel Guimarães Lima
@@ -13,7 +13,7 @@ O projeto Name a Game tem o objetivo de ajudar pessoas a encontrarem o jogo idea
 ## Professores responsáveis
 
 * Hayala Nepomuceno Curto
-* Nome completo do professor 2
+* Carlos Alberto Marques Pietrobon
 
 ## Instruções de utilização
 
