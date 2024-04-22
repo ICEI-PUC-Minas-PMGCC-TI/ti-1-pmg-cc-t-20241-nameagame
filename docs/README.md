@@ -43,9 +43,9 @@ Como dito anteriormente, o projeto tem como alvo os _gamers_, público alvo hoje
 
 ## Personas
 
-<img src="/docs/assets/images/joaozinho.png"> 
-<img src="/docs/assets/images/mariazinha.png">
-<img src="/docs/assets/images/marcos.png">
+<img src="/docs/assets/images/Joaozinho.png"> 
+<img src="/docs/assets/images/Mariazinha.png">
+<img src="/docs/assets/images/Marcos.png">
 
 
 **Links Úteis**:
