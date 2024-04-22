@@ -84,12 +84,12 @@ Relacione as personas identificadas no seu projeto e os respectivos mapas de emp
 - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
 
 ## Histórias de Usuários
-*Como um professor, eu quero poder utilizar essa ferramenta para melhorar minha metodologia de ensino fazendo a relação de jogo-educação.
-*Como um psicólogo, eu quero indicar para meus pacientes jogos casuais para melhorar a saúde mental
-*Como um responsável, quero arranjar uma maneira para me envolver com os meus filhos
-*Como um jogador profissional, eu quero poder otimizar meu acervo de jogos para poder me tornar cada vez melhor
-*Como um streamer, eu quero aumentar a variedade de jogos para fornecer um maior entretenimento e variedade para o meu público
-*Como um estudante, eu quero poder escolher com cuidado um jogo de simulação, para poder melhorar meu raciocínio lógico.
+* Como um professor, eu quero poder utilizar essa ferramenta para melhorar minha metodologia de ensino fazendo a relação de jogo-educação.
+* Como um psicólogo, eu quero indicar para meus pacientes jogos casuais para melhorar a saúde mental
+* Como um responsável, quero arranjar uma maneira para me envolver com os meus filhos
+* Como um jogador profissional, eu quero poder otimizar meu acervo de jogos para poder me tornar cada vez melhor
+* Como um streamer, eu quero aumentar a variedade de jogos para fornecer um maior entretenimento e variedade para o meu público
+* Como um estudante, eu quero poder escolher com cuidado um jogo de simulação, para poder melhorar meu raciocínio lógico.
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
