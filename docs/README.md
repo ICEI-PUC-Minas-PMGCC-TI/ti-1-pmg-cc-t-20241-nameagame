@@ -150,6 +150,11 @@ Wireframes são protótipos das telas da aplicação usados em design de interfa
 
 ## Gestão de Projetos
 
+<img src="/docs/assets/images/kanban.jpg">
+
+Nosso grupo baseou a divisão de tarefas pelo metódo Kanban, infelizmente sobrecarregou dois memebros do times, enquanto o resto fez um pouco ou quase nada.
+
+
  Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
 
 Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
