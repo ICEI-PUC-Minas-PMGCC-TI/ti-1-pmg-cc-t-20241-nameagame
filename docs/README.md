@@ -43,7 +43,10 @@ Como dito anteriormente, o projeto tem como alvo os _gamers_, público alvo hoje
 
 ## Personas
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+<img src="/docs/assets/images/joaozinho.png"> 
+<img src="/docs/assets/images/mariazinha.png">
+<img src="/docs/assets/images/marcos.png">
+
 
 **Links Úteis**:
 
@@ -70,6 +73,10 @@ Os requisitos de um projeto são classificados em dois grupos:
   * O Sistema vai necessitar de uma API das lojas de jogos
   * O Sistema tem que conter um Quiz que seja variável
   * O Sistema tem que conter um algoritmo que produza uma resposta baseada em medidas e parâmetros do Quiz
+  * Os usuários devem poder realizar buscas avançadas por jogos, filtrando por gênero, plataforma, faixa etária, preço e outras características relevantes.  
+  * Os usuários podem avaliar os jogos e deixarem comentários, fornecendo feedback útil para outros usuários e contribuindo para a qualidade das recomendações na plataforma.
+
+Integração com Plataformas de Jogos: Integração com plataformas de distribuição de jogos, como Steam, Epic Games Store, PlayStation Store, Xbox Store, entre outras, para fornecer uma ampla variedade de opções de compra e download diretamente pela plataforma de busca. - Baixa 
 - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
   * O Sistema será Web, então tem que ser acessível e adaptável a qualquer dispositivo
   * Os Usuários tem que ceder dados para usabilidade
