@@ -22,9 +22,9 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 O problema encontrado pela nossa equipe foram primáriamente dois: A dificuldade de se achar o jogo ideal a ser jogado e o tempo que é gasto para acha-lo. Tal problema é voltado ao consumidor de jogos eletrônicos, abrangindo um diverso grupo de pessoas, e ,portanto, a aplicação será no uso doméstico do site.
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+**Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
 
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+**Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
 **Links Úteis**:
 
@@ -36,7 +36,7 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 O objetivo do projeto é criar um software capaz de apresentar um jogo ideal para a pessoa de maneira rápida e eficiente, de acordo com as vontades do momento e suas preferências pré estabelecidas.
 Além disso, parte como objetivo específico do projeto auxiliar os consumidores a acharem o melhor preço dos jogos ideias, como também mostrar outras opções baseadas em estúdios de jogos e gêneros prediletos.
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+**Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
 
 **Links Úteis**:
 
@@ -47,9 +47,9 @@ Aqui você deve descrever os objetivos do trabalho indicando que o objetivo gera
 O tema do projeto foi escolhido por ser algo que a maioria do grupo vivência e, por isso, temos a noção do quanto este projeto poderia impactar positivamente a comunidade dos jogadores, de sua forma mais diversa, seja ampliando a quantidade daquels que jogam, ou seja fazendo as pessoas encontrarem um novo jogo favorito, sendo benéfico para todos, desde quem joga até quem produz.
 
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+**Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+**O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
 
 **Links Úteis**:
 
@@ -63,9 +63,9 @@ Como dito anteriormente, o projeto tem como alvo os _gamers_, público alvo hoje
 <img src="/docs/assets/images/persona2.png">
 <img src="/docs/assets/images/persona3.png">
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+**Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
+**Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
 
 **Links Úteis**:
 
@@ -84,6 +84,12 @@ Relacione as personas identificadas no seu projeto e os respectivos mapas de emp
 - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
 
 ## Histórias de Usuários
+*Como um professor, eu quero poder utilizar essa ferramenta para melhorar minha metodologia de ensino fazendo a relação de jogo-educação.
+*Como um psicólogo, eu quero indicar para meus pacientes jogos casuais para melhorar a saúde mental
+*Como um responsável, quero arranjar uma maneira para me envolver com os meus filhos
+*Como um jogador profissional, eu quero poder otimizar meu acervo de jogos para poder me tornar cada vez melhor
+*Como um streamer, eu quero aumentar a variedade de jogos para fornecer um maior entretenimento e variedade para o meu público
+*Como um estudante, eu quero poder escolher com cuidado um jogo de simulação, para poder melhorar meu raciocínio lógico.
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -97,8 +103,20 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 Os requisitos de um projeto são classificados em dois grupos:
 
 - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
+  * O Sistema requer um cadastro de usuário
+  * O Sistema requer um cadastro para o desenvolvedor de jogos e o upload do seu jogo produzido
+  * O Sistema vai necessitar de uma API das lojas de jogos
+  * O Sistema tem que conter um Quiz que seja variável
+  * O Sistema tem que conter um algoritmo que produza uma resposta baseada em medidas e parâmetros do Quiz
   correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
 - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
+  * O Sistema será Web, então tem que ser acessível e adaptável a qualquer dispositivo
+  * Os Usuários tem que ceder dados para usabilidade
+  * Os Usuários tem que estar dispostos a realizar um quiz
+  * O Sistema será produzido em HTML e CSS
+  * O Sitema deve informar quais dados serão utilizados
+    
+  
   correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
 
 Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
