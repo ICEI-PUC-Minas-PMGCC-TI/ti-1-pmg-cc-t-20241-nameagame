@@ -58,6 +58,7 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 ## Público-Alvo
 
 Como dito anteriormente, o projeto tem como alvo os _gamers_, público alvo hoje que se torna bem abrangente. Por isso, realizamos uma pesquisa por meio de um formulário para garantir um número maior e distinto de pessoas, e assim entendermos melhor o público-alvo. Formamos então um grupo seleto de personas, como pode se ver abaixo:
+<br>
 <img src="/docs/assets/images/persona1.png">
 <img src="/docs/assets/images/persona2.png">
 <img src="/docs/assets/images/persona3.png">
