@@ -150,7 +150,7 @@ Wireframes são protótipos das telas da aplicação usados em design de interfa
 
 ## Gestão de Projetos
 
-<img src="/docs/assets/images/kanban.jpg">
+<img src="/docs/assets/images/kanban.png">
 
 Nosso grupo baseou a divisão de tarefas pelo metódo Kanban, infelizmente sobrecarregou dois memebros do times, enquanto o resto fez um pouco ou quase nada.
 
