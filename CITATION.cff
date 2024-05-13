@@ -1,14 +1,20 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite as below."
 authors:
-  - family-names: Duarte
+  - family-names: Stambassi
     given-names: Augusto
   - family-names: Candido
     given-names: Davi
   - family-names: Anderson
     given-names: Gabriel
-  - family-names: Duarte
+  - family-names: Van 
     given-names: Alexandre
+  - family-names: dos Reis
+    given-names: João Vitor
+  - family-names: Patrício 
+    given-names: Fabiano vitor
+  - family-names: Guimarães 
+    given-names: Igor Gabriel  
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: 
