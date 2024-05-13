@@ -10,7 +10,6 @@ Um projeto que tem como objetivo fornecer comunicação gratuita, segura e efici
 * Alexandre Van de Graaf
 * [Davi Cândido de Almeida](https://github.com/DaviKandido)
 * [Gabriel Anderson](https://github.com/gonafritas)
-* [Harper Moreira Mascarenhas](https://github.com/harperbolic)
 * João Vitor dos Reis Soares
 * Fabiano Vitor Patrício Eleutério
 * Igor Gabriel Guimarães Lima
