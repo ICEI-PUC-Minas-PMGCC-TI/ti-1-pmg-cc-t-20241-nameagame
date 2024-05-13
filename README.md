@@ -4,6 +4,8 @@
 
 Um projeto que tem como objetivo fornecer comunicação gratuita, segura e eficiente para gerenciamento de projetos dentro do ambiente universitário.
 
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html) 
+
 ## Alunos integrantes da equipe
 
 * Augusto Stambassi Duarte  
