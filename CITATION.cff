@@ -1,20 +1,20 @@
-<<<<<<< HEAD
-cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: 
+cff-version: 1.2.0
+message: "If you use this software, please cite as below."
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Stambassi
+    given-names: Augusto
+  - family-names: Candido
+    given-names: Davi
+  - family-names: Anderson
+    given-names: Gabriel
+  - family-names: Van 
+    given-names: Alexandre
+  - family-names: dos Reis
+    given-names: João Vitor
+  - family-names: Patrício 
+    given-names: Fabiano vitor
+  - family-names: Guimarães 
+    given-names: Igor Gabriel  
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: 
@@ -23,43 +23,8 @@ authors:
     affiliation: PUC Minas
     family-names: 
     given-names: 
-keywords:
-  - 
-  - 
-repository-code: 
-license: CC-BY-4.0
+title: "Daigaku Connect"
 version: 1.0.0
-date-released: 2022-07-14
-=======
-cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: 
-authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-keywords:
-  - 
-  - 
-repository-code: 
-license: CC-BY-4.0
-version: 1.0.0
-date-released: 2022-07-14
->>>>>>> 576e4073eb686b7caee5801aac8f95491eb4d605
+license: GNU GPL 3.0
+date-released: 2024-04-14
+url: "https://github.com/ICEI-PUC-Minas-PMGCC-TI/daigaku-connect"

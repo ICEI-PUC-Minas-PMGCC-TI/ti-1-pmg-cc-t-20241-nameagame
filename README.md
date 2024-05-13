@@ -1,11 +1,17 @@
-# Name a Game
+# Daigaku Connect
 
-O projeto Name a Game tem o objetivo de ajudar pessoas a encontrarem o jogo ideal para cada gosto e vontades do momento. A página terá várias funcionalidades, como um catálago de jogos para ajudar a encontrar o melhor preço entre as diversas lojas virtuais. Assim, o projeto vai suprir uma demanda entre os _gamers_ que gastam muito tempo procurando o jogo e, consequentemente, tendo menos tempo para jogar.
+![](https://github.com/ICEI-PUC-Minas-PMGCC-TI/daigaku-connect/blob/main/source/logo.png?raw=true)
+
+Um projeto que tem como objetivo fornecer comunicação gratuita, segura e eficiente para gerenciamento de projetos dentro do ambiente universitário.
+
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html) 
 
 ## Alunos integrantes da equipe
 
 * Augusto Stambassi Duarte  
 * Alexandre Van de Graaf
+* [Davi Cândido de Almeida](https://github.com/DaviKandido)
+* [Gabriel Anderson](https://github.com/gonafritas)
 * João Vitor dos Reis Soares
 * Fabiano Vitor Patrício Eleutério
 * Igor Gabriel Guimarães Lima
