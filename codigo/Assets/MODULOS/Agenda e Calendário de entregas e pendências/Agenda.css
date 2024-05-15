@@ -34,7 +34,7 @@
    
     .agenda{
     
-        padding: 15% 0% 0% 60%;
+        padding: 1% 0% 0% 60%;
         background-color: #F15025;
     
     }
@@ -42,7 +42,7 @@
 
 :root {
     
-  --primary-color: #f90a39;
+  --primary-color: #F15025;
   --text-color: #1d1d1d;
   --bg-color: #f1f1fb;
 }
@@ -102,7 +102,7 @@ body {
   transition: all 0.3s;
 }
 .calendar .header .btns .btn:hover {
-  background-color: #db0933;
+  background-color: #F15025;
   transform: scale(1.05);
 }
 .weekdays {
@@ -154,3 +154,62 @@ body {
   color: #ccc;
   padding: 10% 40% 20% 40%;
 }
+
+/*Adicionador de Tarefas*/
+.addTarefas{
+  background-color: #fff;
+  width: 35%;
+  margin: 5% 2% 0% 0%;
+  height: 200px;
+  float: right;
+  display: flex;
+  
+}
+
+.addTarefas{
+
+  padding: 1%;
+  display: inline;
+  
+}
+
+
+
+.addTarefas .NomeTarefa{
+
+  display: flex;
+  width: 20%;
+  height: 10%;
+
+}
+
+.addTarefas .DescriçãoTarefa{
+
+
+  display: inline;
+  width: 80%;
+  height: 60%;
+
+}
+
+
+
+
+
+
+
+  .days .day {
+    cursor: pointer;
+  }
+
+  .days .day.selected {
+    background-color: red;
+    color: white;
+  }
+
+  .addTarefas {
+    display: none;
+    /* Outros estilos que você quiser */
+  }
+
+

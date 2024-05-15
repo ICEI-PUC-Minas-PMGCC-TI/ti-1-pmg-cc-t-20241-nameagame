@@ -2,25 +2,13 @@ const daysContainer = document.querySelector(".days"),
   nextBtn = document.querySelector(".next-btn"),
   prevBtn = document.querySelector(".prev-btn"),
   month = document.querySelector(".month"),
+  tarefas = document.querySelector(".addTarefas"),
   todayBtn = document.querySelector(".today-btn");
 
-
 const months = [
-  "Jan",
-  "Fev",
-  "Mar",
-  "Abr",
-  "Mai",
-  "Jun",
-  "Jul",
-  "Agos", 
-  "Set",
-  "Out",
-  "Nov",
-  "Dez",
+  "Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
+  "Jul", "Ago", "Set", "Out", "Nov", "Dez"
 ];
-
-
 
 const days = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
 
@@ -49,11 +37,11 @@ function renderCalendar() {
   month.innerHTML = `${months[currentMonth]} ${currentYear}`;
 
   // atualizar o HTML dos dias
-  let days = "";
+  let daysHTML = "";
 
   // HTML dos dias do mês anterior
   for (let x = firstDay.getDay(); x > 0; x--) {
-    days += `<div class="btn day prev">${prevLastDayDate - x + 1}</div>`;
+    daysHTML += `<div class="btn day prev">${prevLastDayDate - x + 1}</div>`;
   }
 
   // dias do mês atual
@@ -64,35 +52,52 @@ function renderCalendar() {
       currentMonth === new Date().getMonth() &&
       currentYear === new Date().getFullYear()
     ) {
-      // se a data, mês e ano coincidem, adicionar "today"
-      days += `<div class="btn day today">${i}</div>`;
+      daysHTML += `<div class="btn day today">${i}</div>`;
     } else {
-      // caso contrário, não adicionar "today"
-      days += `<div class="btn day ">${i}</div>`;
+      daysHTML += `<div class="btn day">${i}</div>`;
     }
   }
 
   // dias do próximo mês
   for (let j = 1; j <= nextDays; j++) {
-    days += `<div class="btn day next">${j}</div>`;
+    daysHTML += `<div class="btn day next">${j}</div>`;
   }
 
   // executar esta função a cada renderização do calendário
   hideTodayBtn();
-  daysContainer.innerHTML = days;
+  daysContainer.innerHTML = daysHTML;
+
+  // adicionar evento de clique aos dias após renderizar
+  addDayClickEvent();
 }
 
-renderCalendar();
+//O dia clicado fica vermelho
+function addDayClickEvent() {
+  const dayElements = document.querySelectorAll(".day");
+  dayElements.forEach(day => {
+    day.addEventListener("click", (e) => {
+      // remover a classe "selected" de todos os dias
+      dayElements.forEach(d => d.classList.remove("selected"));
+
+      // adicionar a classe "selected" ao dia clicado
+      e.target.classList.add("selected");
+
+      // mostrar o elemento de tarefas
+      if(tarefas.style.display == "flex")
+      tarefas.style.display = "none";
+      else
+      tarefas.style.display = "flex";
+    });
+  });
+}
 
 nextBtn.addEventListener("click", () => {
   // aumentar o mês atual em um
   currentMonth++;
   if (currentMonth > 11) {
-    // se o mês for maior que 11, definir como 0 e aumentar o ano em um
     currentMonth = 0;
     currentYear++;
   }
-  // renderizar novamente o calendário
   renderCalendar();
 });
 
@@ -100,7 +105,6 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
   // diminuir em um
   currentMonth--;
-  // verificar se é menor que 0, então definir como 11 e diminuir o ano
   if (currentMonth < 0) {
     currentMonth = 11;
     currentYear--;
@@ -113,12 +117,10 @@ todayBtn.addEventListener("click", () => {
   // definir o mês e o ano como atuais
   currentMonth = date.getMonth();
   currentYear = date.getFullYear();
-  // renderizar novamente o calendário
   renderCalendar();
 });
 
 // esconder o botão "hoje" se já for o mês atual e vice-versa
-
 function hideTodayBtn() {
   if (
     currentMonth === new Date().getMonth() &&
@@ -129,3 +131,5 @@ function hideTodayBtn() {
     todayBtn.style.display = "flex";
   }
 }
+
+renderCalendar();
