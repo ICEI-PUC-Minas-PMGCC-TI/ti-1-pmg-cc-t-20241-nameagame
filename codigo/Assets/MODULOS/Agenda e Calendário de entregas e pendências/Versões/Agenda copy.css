@@ -24,8 +24,7 @@
   
   .agenda {
     padding: 1% 0 0 60%;
-    background-image: url(tela_fundo.png);
-    background-position: 40%;
+    background-color: #f15025;
   }
 }
 

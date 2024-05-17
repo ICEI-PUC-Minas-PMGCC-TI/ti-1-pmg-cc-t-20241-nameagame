@@ -1,0 +1,83 @@
+{
+    "Trabalho": [],
+    "Calendário": [],
+    "Tarefas": [],
+    "Arquivos": [],
+    "Chat": [],
+    "Plataformas": [],
+    "Integrantes": [],
+    "Solicitados": [],
+    "Pesquisa": []
+}
+
+{
+    "Trabalho": [
+        {
+            "id": "",
+            "foto": "",
+            "Nome": "",
+            "Área-de-atuação": ""
+        }
+    ],
+    "Calendário": [ 
+        {
+            "Nome da Tarefa": "",
+            "Descrição da Tarefa": "",
+            "Data": "",
+            "Feito": "",
+            "Cor": ""
+        }
+    ],
+
+    "Tarefas": [ 
+        {
+            "Nome da Tarefa": "",
+            "Descrição da Tarefa": "",
+            "Data": "",
+            "Feito": "",
+            "Cor": ""
+        }
+    ],
+    "Arquivos": [
+        {
+            "Nome": "",
+            "Lugar": "",
+            "Conteúdo": ""
+        }
+    ],
+    "Chat": [
+        {
+            "Backlog": "" ,
+            "Visualizações": "",
+            "Curtidas": "",
+            "Não-quero-ver": ""
+        }
+    ],
+    "Plataformas": [
+        {
+            "id": "",
+            "Logo": "",
+            "Curtidas": "",
+            "Não-quero-ver": "",
+            "Link": ""
+        }
+    ],
+    "Integrantes": [
+        {
+            "id": "",
+            "nome": ""
+        }
+    ],
+    "Solicitados": [
+        {
+            "id": "",
+            "nome": "",
+            "Status": ""
+        }
+    ],
+    "Pesquisa": [ 
+        {  "id": "",
+        "pesquisar": "",
+        "titulo": ""                                                                                                    }
+    ]
+}

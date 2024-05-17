@@ -142,17 +142,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let nome = nomeInput.value;
     let descricao = descricaoTextarea.value;
 
-  //   let text = "Calendário": [ 
-  //     {
-  //         "Nome da Tarefa": "",
-  //         "Descrição da Tarefa": "",
-  //         "Data": "",
-  //         "Feito": ,
-  //         "Cor": ""
-  //     }
-  // ],
-
-    localStorage.setItem("agenda", text);
     // Validar se o nome da tarefa está vazio
     if (nome === "") {
       alert("Por favor, insira o nome da tarefa.");
@@ -311,5 +300,4 @@ document.addEventListener("DOMContentLoaded", () => {
   tarefas.appendChild(tarefasList);
 
   renderCalendar();
-  
 });
