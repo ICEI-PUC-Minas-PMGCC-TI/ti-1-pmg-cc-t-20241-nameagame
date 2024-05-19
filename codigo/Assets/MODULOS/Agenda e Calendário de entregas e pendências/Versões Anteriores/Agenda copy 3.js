@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const todayBtn = document.querySelector(".today-btn");
   const diaSelecionadoInput = document.createElement("input"); // Crie um input para guardar o dia
 
+  
   const months = [
     "Jan",
     "Fev",
@@ -136,23 +137,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Função para salvar as tarefas
   function salvarTarefa() {
-    const dia = diaSelecionadoInput.value;
+    const dia = diaSelecionadoInput.value; // Obter o dia selecionado
     const nomeInput = document.getElementById("exampleFormControlInput1");
     const descricaoTextarea = document.getElementById("exampleFormControlTextarea1");
     let nome = nomeInput.value;
     let descricao = descricaoTextarea.value;
-    
-let calendario = [
-    {
-        Nome_da_Tarefa: "Exemplo de Tarefa",
-        Descricao_da_Tarefa: "Descrição da tarefa de exemplo",
-        Data: "2024-05-19",
-        Feito: false,
-        Cor: "#FF0000"
-    }
-];
 
-    localStorage.setItem("agenda", text);
     // Validar se o nome da tarefa está vazio
     if (nome === "") {
       alert("Por favor, insira o nome da tarefa.");
@@ -170,9 +160,9 @@ let calendario = [
 
     // Adicionar ou atualizar a tarefa no objeto tarefasPorDia
     if (!tarefasPorDia[dia]) {
-      tarefasPorDia[dia] = [];
+      tarefasPorDia[dia] = []; // Criar um array vazio para o dia se não existir
     }
-    tarefasPorDia[dia].push(tarefa);
+    tarefasPorDia[dia].push(tarefa); // Adicionar a tarefa ao array do dia correspondente
 
     // Limpar os campos de entrada
     nomeInput.value = "";
@@ -311,5 +301,4 @@ let calendario = [
   tarefas.appendChild(tarefasList);
 
   renderCalendar();
-  
 });
