@@ -5,6 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+.navbar-brand img {
+  display: flex;
+  width: 20%;
+  background-color: #f15025;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+}
+
 @media (max-width: 600px) {
   body {
     background-color: #f15025;

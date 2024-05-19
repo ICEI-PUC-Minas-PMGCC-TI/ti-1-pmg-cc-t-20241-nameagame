@@ -4,7 +4,7 @@
             "id": "",
             "foto": "",
             "Nome": "",
-            "Área-de-atuação": ""
+            "Área_de_atuação": [ "", "" ]
         }
     ],
     "Calendário": [ 
@@ -45,7 +45,6 @@
         {
             "id": "",
             "Logo": "",
-            "Curtidas": "",
             "Não-quero-ver": "",
             "Link": ""
         }
