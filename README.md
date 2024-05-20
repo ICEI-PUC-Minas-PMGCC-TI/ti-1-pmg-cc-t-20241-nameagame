@@ -14,7 +14,6 @@ Um projeto que tem como objetivo fornecer comunicação gratuita, segura e efici
 * [Gabriel Anderson](https://github.com/gonafritas)
 * João Vitor dos Reis Soares
 * Fabiano Vitor Patrício Eleutério
-* Igor Gabriel Guimarães Lima
    
 ## Professores responsáveis
 
