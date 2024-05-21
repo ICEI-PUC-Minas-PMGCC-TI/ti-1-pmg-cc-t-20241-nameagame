@@ -9,12 +9,11 @@ Um projeto que tem como objetivo fornecer comunicação gratuita, segura e efici
 ## Alunos integrantes da equipe
 
 * Augusto Stambassi Duarte  
-* Alexandre Van de Graaf
+* [Alexandre Van de Graaf](https://github.com/Fan77asyy)
 * [Davi Cândido de Almeida](https://github.com/DaviKandido)
 * [Gabriel Anderson](https://github.com/gonafritas)
 * João Vitor dos Reis Soares
 * Fabiano Vitor Patrício Eleutério
-* Igor Gabriel Guimarães Lima
    
 ## Professores responsáveis
 
