@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const gravarBtn = document.querySelector("#Botao-gravar");
   const todayBtn = document.querySelector(".today-btn");
   const diaSelecionadoInput = document.createElement("input"); // Crie um input para guardar o dia
-  const Abatarefas = document.querySelector(".contemTarefa .tarefasContida ");
-  const limparBtn = document.querySelector("#Botao-limpar");
 
   const months = [
     "Jan",
@@ -117,83 +115,77 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Função para salvar as tarefas
-  function salvarTarefa() {
-    const dia = parseInt(diaSelecionadoInput.value); // Converte para inteiro
-    const nomeTarefa = document.getElementById("NomaTarefa").value;
-    const descricaoTarefa = document.getElementById("DescriçãoTarefa").value;
+  let tarefasPorDia = {}; // Objeto para guardar as tarefas por dia
 
-    let calendario = JSON.parse(localStorage.getItem('db')) || {};
-
-    if (!calendario.Calendário) {
-      calendario.Calendário = {};
+  document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem('tarefasPorDia')) {
+        tarefasPorDia = JSON.parse(localStorage.getItem('tarefasPorDia'));
     }
+    renderCalendar();
+});
 
-    if (!calendario.Calendário[dia]) {
-      calendario.Calendário[dia] = [];
+
+  // Função para exibir as tarefas do dia selecionado
+  function displayTarefas(dia) {
+    const tarefasList = document.querySelector(".tarefas-list");
+    tarefasList.innerHTML = "";
+
+    if (tarefasPorDia[dia]) {
+        tarefasPorDia[dia].forEach((tarefa) => {
+            const tarefaElement = document.createElement("div");
+            tarefaElement.classList.add("fixed-text");
+            tarefaElement.textContent = tarefa.nome + "\n" + tarefa.descricao;
+            tarefasList.appendChild(tarefaElement);
+        });
     }
-
-    calendario.Calendário[dia].push({
-      Nome_da_Tarefa: nomeTarefa,
-      Descrição_da_Tarefa: descricaoTarefa,
-      Feito: false,
-      Cor: "#FFFFFF"
-    });
-
-    localStorage.setItem('db', JSON.stringify(calendario));
-  }
-
-  // Função para excluir as tarefas
-  function excluirTarefa(dia) {
-    let calendario = JSON.parse(localStorage.getItem('db')) || {};
-
-    if (calendario.Calendário && calendario.Calendário[dia]) {
-      calendario.Calendário[dia] = [];
-    }
-
-    localStorage.setItem('db', JSON.stringify(calendario));
-  }
-
-  // Função para exibir as tarefas
-// Função para exibir as tarefas
-function displayTarefas(dia) {
-  Abatarefas.innerHTML = ''; // Limpa a lista de tarefas
-
-  let calendario = JSON.parse(localStorage.getItem('db')) || {};
-
-  if (calendario.Calendário && calendario.Calendário[dia]) {
-    const tarefasDoDia = calendario.Calendário[dia];
-
-    tarefasDoDia.forEach(tarefa => {
-      // Criar o elemento da tarefa
-      const tarefaElement = document.createElement("div");
-      tarefaElement.classList.add("card");
-      tarefaElement.style.width = "20rem";
-
-      // Criar os elementos internos
-      const cardBody = document.createElement("div");
-      cardBody.classList.add("card-body");
-
-      const cardTitle = document.createElement("h5");
-      cardTitle.classList.add("card-title");
-      cardTitle.innerHTML = `<strong>${tarefa.Nome_da_Tarefa}</strong>`;
-
-      const cardText = document.createElement("p");
-      cardText.classList.add("card-text");
-      cardText.textContent = tarefa.Descrição_da_Tarefa;
-
-      // Adicionar os elementos filhos
-      cardBody.appendChild(cardTitle);
-      cardBody.appendChild(cardText);
-
-      // Adicionar o cardBody à tarefaElement
-      tarefaElement.appendChild(cardBody);
-
-      // Adicionar a tarefa à página
-      Abatarefas.appendChild(tarefaElement);
-    });
-  }
 }
+
+
+
+  function initData() {
+  // Função para salvar as tarefas
+
+    let calendario = {
+      Trabalho: [
+         {
+             id: 0,
+             foto: "",
+             Nome: "",
+             Área_de_atuação: [ "", "" ]
+         }, 
+         {
+     Calendário: [ 
+         {
+             Nome_da_Tarefa: "",
+             Descrição_da_Tarefa: "",
+             Data: "",
+             Feito: "",
+             Cor: ""
+         }
+     ]
+    }
+   ]
+ };
+ idLocal += 1;
+ localStorage.setItem('db', JSON.stringify(calendario));
+
+} 
+
+function salvarTarefa() {
+  const dia = diaSelecionadoInput.value;
+  const nomeInput = document.getElementById("NomaTarefa");
+  const descricaoTextarea = document.getElementById("DescriçãoTarefa");
+  let nome = nomeInput.value;
+  let descricao = descricaoTextarea.value;
+
+  if (!tarefasPorDia[dia]) {
+      tarefasPorDia[dia] = [];
+  }
+
+  tarefasPorDia[dia].push({ nome: nome, descricao: descricao });
+  localStorage.setItem('tarefasPorDia', JSON.stringify(tarefasPorDia));
+}
+
 
   // Função para alternar entre modo de edição e visualização
   function toggleEditMode() {
@@ -202,58 +194,56 @@ function displayTarefas(dia) {
     const dia = diaSelecionadoInput.value;
 
     if (gravarBtn.innerText === "Gravar") {
-      const nomeTarefa = nomeInput.value;
-      const descricaoTarefa = descricaoTextarea.value;
+        const nomeTarefa = nomeInput.value;
+        const descricaoTarefa = descricaoTextarea.value;
 
-      // Criar o elemento da tarefa
-      const tarefaElement = document.createElement("div");
-      tarefaElement.classList.add("card");
-      tarefaElement.style.width = "20rem";
+        const nomeText = document.createElement("p");
+        nomeText.innerText = nomeTarefa;
+        nomeText.classList.add("fixed-text");
 
-      // Criar os elementos internos
-      const cardBody = document.createElement("div");
-      cardBody.classList.add("card-body");
+        const descricaoText = document.createElement("p");
+        descricaoText.innerText = descricaoTarefa;
+        descricaoText.classList.add("fixed-text");
 
-      const cardTitle = document.createElement("h5");
-      cardTitle.classList.add("card-title");
-      cardTitle.innerHTML = `<strong>${nomeTarefa}</strong>`;
+        nomeInput.parentNode.replaceChild(nomeText, nomeInput);
+        descricaoTextarea.parentNode.replaceChild(descricaoText, descricaoTextarea);
 
-      const cardText = document.createElement("p");
-      cardText.classList.add("card-text");
-      cardText.textContent = descricaoTarefa;
+        gravarBtn.innerText = "Excluir";
+        salvarTarefa();
+        displayTarefas(dia);
+    } else {
+        const nomeText = document.querySelector(".fixed-text");
+        const descricaoText = document.querySelectorAll(".fixed-text")[1];
 
-      // Adicionar os elementos filhos
-      cardBody.appendChild(cardTitle); 
-      cardBody.appendChild(cardText); 
+        const nomeInput = document.createElement("input");
+        nomeInput.type = "text";
+        nomeInput.className = "form-control";
+        nomeInput.id = "NomaTarefa";
+        nomeInput.value = nomeText.innerText;
 
-      // Adicionar o cardBody à tarefaElement
-      tarefaElement.appendChild(cardBody); 
+        const descricaoTextarea = document.createElement("textarea");
+        descricaoTextarea.className = "form-control";
+        descricaoTextarea.id = "DescriçãoTarefa";
+        descricaoTextarea.rows = "3";
+        descricaoTextarea.value = descricaoText.innerText;
 
-      // Adicionar a tarefa à página
-      Abatarefas.appendChild(tarefaElement);
+        nomeText.parentNode.replaceChild(nomeInput, nomeText);
+        descricaoText.parentNode.replaceChild(descricaoTextarea, descricaoText);
 
-      salvarTarefa();
-      displayTarefas(dia);
-
-      nomeInput.value = "";
-      descricaoTextarea.value = "";
-
-      // Incrementar a contagem de tarefas
-
-      gravarBtn.innerText = "Gravar";
-
+        gravarBtn.innerText = "Gravar";
+        excluirTarefa(dia);
     }
-  }
+}
 
-  // Função para limpar as tarefas
-  function ExcluiTarefas() {
-    Abatarefas.innerHTML = ""; // Limpa o conteúdo do container das tarefas
-    excluirTarefa(diaSelecionadoInput.value); // Excluir as tarefas do dia selecionado
+function excluirTarefa(dia) {
+  delete tarefasPorDia[dia];
+  localStorage.setItem('tarefasPorDia', JSON.stringify(tarefasPorDia));
+  displayTarefas(dia);
+}
 
-  }
+
 
   gravarBtn.addEventListener("click", toggleEditMode);
-  limparBtn.addEventListener("click", ExcluiTarefas);
 
   // Botão para o próximo mês
   nextBtn.addEventListener("click", () => {
@@ -308,4 +298,5 @@ function displayTarefas(dia) {
   tarefas.appendChild(tarefasList);
 
   renderCalendar();
-}); 
+  
+});

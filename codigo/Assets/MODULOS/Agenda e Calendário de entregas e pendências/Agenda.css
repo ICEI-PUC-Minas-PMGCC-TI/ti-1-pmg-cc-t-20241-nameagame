@@ -17,7 +17,7 @@
   body {
     background-color: #f15025;
   }
-  
+
   .agenda {
     background-color: #f15025;
     max-width: 100%;
@@ -29,7 +29,7 @@
   body {
     background-color: #f15025;
   }
-  
+
   .agenda {
     padding: 1% 0 0 60%;
     background-image: url(tela_fundo.png);
@@ -53,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Alinha os elementos verticalmente */
 }
 
 .calendar {
@@ -62,6 +63,7 @@ body {
   border-radius: 10px;
   background-color: var(--bg-color);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px; /* Espaçamento entre o calendário e a área de tarefas */
 }
 
 .calendar .header {
@@ -159,62 +161,6 @@ body {
   padding: 10% 40% 20% 40%;
 }
 
-/* Adicionador de Tarefas */
-.addTarefas {
-  height: 100;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  color: var(--text-color);
-  background-color: #f1f1fb;
-  transition: all 0.5s;
-  width: 35%;
-  margin: 5% 0 5% 1.5%;
-  height: 435px;
-  float: right;
-  border-radius: 10px;
-  padding: 1.5%;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-  flex-direction: column;
-}
-
-.addTarefas p {
-  transition: all 0.5s;
-  font-size: 16px; /* Diminuído de 20px */
-  font-weight: 550;
-  color: var(--text-color);
-  border-bottom: 2px solid #ccc;
-  width: 100%;
-  text-align: center;
-  margin: 3%;
-  padding: 10% 1% 8% 1%;
-}
-
-.addTarefas .Titulo {
-  transition: all 0.5s;
-  display: block;
-  margin-bottom: 8%;
-}
-
-.addTarefas .NomeTarefa {
-  transition: all 0.5s;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.addTarefas .DescriçãoTarefa {
-  transition: all 0.5s;
-  display: block;
-  width: 100%;
-  height: 55%;
-  margin: 0 0 15% 0;
-}
-
-.addTarefas .mb-3 {
-  font-size: 90%; /* Diminuído de 100% */
-}
 
 .days .day {
   cursor: pointer;
@@ -238,3 +184,130 @@ body {
   font-size: 14px; /* Adicionado para diminuir o tamanho do texto */
 }
 
+.contemTarefa {
+  display: flex;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 100%; /* Ocupa toda a largura na tela */
+  margin: 10px 0; /* Espaçamento entre o calendário e a área de tarefas */
+  height: auto;
+  border-radius: 10px;
+  padding: 3%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center;
+}
+
+
+.contemTarefa .Titulo  {
+  align-items: center;
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3% 3% 3% 10;
+  padding: 0% 1% 2% 1%;
+}
+
+.contemTarefa .card {
+
+background-color: #f15025;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+align-items: center;
+animation: alternate;
+margin: 1%; 
+font-size: 14px; /* Diminuído de 20px */
+padding: 0% 0% 0% 0%;
+
+
+}
+
+.contemTarefa .card-title{
+
+  align-items: center;
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  color: var(--text-color);
+  width: 100%;
+  text-align: center;
+  padding: 0% 0% 1% 0%;
+
+}
+
+/* Adicionador de Tarefas */
+.addTarefas {
+  width: 100%;
+  display: flex;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 100%;
+  margin: 2% 0 2% 1.5%;
+  height: 435px;
+  border-radius: 10px;
+  padding: 4%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+.addTarefas p {
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3%;
+  padding: 0% 0% 4% 0%;
+}
+
+.addTarefas .Titulo {
+  transition: all 0.5s;
+  display: block;
+  margin-bottom: 4%;
+  margin: 0% 0% 2% 0%;
+}
+
+.addTarefas #Botao-gravar {
+  margin: 1%;
+}
+
+.addTarefas #Botao-limpar {
+  margin: 1%;
+}
+
+.addTarefas .mb-3 {
+  font-size: 90%; /* Diminuído de 100% */
+}
+
+.tarefa-dia {
+  background-color: #f15025; /* Ou qualquer cor azul que você preferir */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contemTarefa {
+    width: 100%; /* Ocupa toda a largura na tela */
+    margin-bottom: 10px; /* Espaçamento entre o calendário e as tarefas */
+  }
+  .addTarefas {
+    width: 100%; /* Ocupa toda a largura na tela */
+    margin-top: 10px; /* Espaçamento entre as tarefas e o calendário */
+  }
+
+  .addTarefas .p {
+
+    padding: 20%;
+  }
+
+  .calendar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

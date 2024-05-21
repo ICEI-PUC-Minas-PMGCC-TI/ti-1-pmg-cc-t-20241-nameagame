@@ -5,6 +5,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+.navbar-brand img {
+  display: flex;
+  width: 20%;
+  background-color: #f15025;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+}
+
 @media (max-width: 600px) {
   body {
     background-color: #f15025;
@@ -24,7 +32,8 @@
   
   .agenda {
     padding: 1% 0 0 60%;
-    background-color: #f15025;
+    background-image: url(tela_fundo.png);
+    background-position: 40%;
   }
 }
 
@@ -44,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Alinha os elementos verticalmente */
 }
 
 .calendar {
@@ -159,7 +169,7 @@ body {
   color: var(--text-color);
   background-color: #f1f1fb;
   transition: all 0.5s;
-  width: 35%;
+  width: 100%;
   margin: 5% 0 5% 1.5%;
   height: 435px;
   float: right;
@@ -178,7 +188,7 @@ body {
   width: 100%;
   text-align: center;
   margin: 3%;
-  padding: 10% 1% 8% 1%;
+  padding: 1% 1% 4% 1%;
 }
 
 .addTarefas .Titulo {
@@ -193,6 +203,7 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
+
 }
 
 .addTarefas .DescriçãoTarefa {
@@ -229,4 +240,63 @@ body {
   font-size: 14px; /* Adicionado para diminuir o tamanho do texto */
 }
 
+.contemTarefa{
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 50%;
+  margin: 5% 0 5% 1.5%;
+  height: 435px;
+  border-radius: 10px;
+  padding: 1.5%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction:column;
+}
 
+.contemTarefa .Titulo {
+  transition: all 0.5s;
+  display: block;
+  margin-bottom: 8%;
+}
+
+.contemTarefa p {
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3%;
+  padding: 2% 1% 4% 1%;
+}
+
+/* Posicionamento do bloco "contemTarefa" */
+.contemTarefa {
+  width: 100%; /* Ocupa toda a largura */
+  margin-top: 20px; /* Espaço entre o calendário e as tarefas */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .agenda {
+    padding: 1% 0 0 0; /* Remove a margem lateral do calendário */
+    flex-direction: column; /* Empilha o calendário e as tarefas */
+  }
+
+  .calendar {
+    width: 100%;
+  }
+
+  .addTarefas {
+    width: 100%; /* Ocupa toda a largura */
+    margin-top: 20px; /* Espaço entre o calendário e as tarefas */
+  }
+  
+  .contemTarefa {
+    width: 100%;
+    margin-top: 20px; /* Espaço entre o calendário e as tarefas */
+  }
+}

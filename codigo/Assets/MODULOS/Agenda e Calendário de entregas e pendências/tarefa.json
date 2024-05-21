@@ -5,14 +5,14 @@
             "foto": "",
             "Nome": "",
             "Área_de_atuação": [ "", "" ]
-        }
-    ],
+        }, 
+        {
     "Calendário": [ 
         {
             "Nome da Tarefa": "",
             "Descrição da Tarefa": "",
             "Data": "",
-            "Feito": ,
+            "Feito": "",
             "Cor": ""
         }
     ],
@@ -67,4 +67,6 @@
         "pesquisar": "",
         "titulo": ""                                                                                                    }
     ]
+  }
+ ]
 }

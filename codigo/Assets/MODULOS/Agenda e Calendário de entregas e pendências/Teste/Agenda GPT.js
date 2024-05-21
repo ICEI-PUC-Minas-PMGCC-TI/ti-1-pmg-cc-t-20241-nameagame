@@ -134,8 +134,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     calendario.Calendário[dia].push({
-      Nome_da_Tarefa: nomeTarefa,
-      Descrição_da_Tarefa: descricaoTarefa,
+      Nome_da_Tarefa: "nomeTarefa",
+      Descrição_da_Tarefa: "descricaoTarefa",
       Feito: false,
       Cor: "#FFFFFF"
     });
@@ -232,16 +232,14 @@ function displayTarefas(dia) {
       // Adicionar a tarefa à página
       Abatarefas.appendChild(tarefaElement);
 
-      salvarTarefa();
-      displayTarefas(dia);
-
       nomeInput.value = "";
       descricaoTextarea.value = "";
 
       // Incrementar a contagem de tarefas
 
       gravarBtn.innerText = "Gravar";
-
+      salvarTarefa();
+      displayTarefas(dia);
     }
   }
 
