@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/b0dc0539e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Daigaku - Criação de Projeto</title>
+</head>
+
+<body onload=initData(),updateProjectCard()>
+    <!-- Botao de return -->
+    <a id="back-button" href=""><i class="fa-solid fa-circle-arrow-left mt-4 mx-1 fa-xl"></i></a>
+    <!-- Parte principal -->
+    <article id="principal">
+        <h1>Criação de Projeto</h1>
+        <div class="mx-1" style="font-weight: bold;">Preview do card</div>
+        <!-- Preview do card - ocupa 2/3 do div principal -->
+        <div id="preview-card">
+            <!-- Mostrar a foto 1/3 do card -->
+            <div id="foto-div">
+                <img id="foto-preview" alt="Foto do projeto" src="">
+            </div>
+            <!-- Mostrar os dados: Nome, Resumo e temas -->
+            <div class="dados-preview">
+                <p><strong>Nome: </strong><span id="name">Lorem ipsum dolor sit amet.</span> </p>
+                <p><strong>Resumo: </strong> <span id="resume">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ut eligendi
+                        repellat, doloribus labore eaque voluptatem! Similique consequatur veritatis temporibus
+                        esse?</span></p>
+                <p><strong>Tema:</strong> <span id="tema">TI</span></p>
+            </div>
+        </div>
+
+        <!-- Formulario - ocupa 1/3 do div principal -->
+        <div id="formulario">
+
+            <form method="GET" id="formulario" class="formulario">
+                <!-- Nome do projeto -->
+                <label for="project-name">Nome do projeto:</label>
+                <input type="text" id="project-name" name="project-name" minlength="3" maxlength="30" required
+                    onchange="realTimeUpdate('name')">
+                <!-- Upload de foto -->
+                <div class="mt-1">Foto do projeto: </div>
+                <label for="project-foto" id="label-foto" >Escolha um arquivo</label>
+                <input type="file" id="project-foto" name="project-foto" accept="image/png, image/jpeg, image/gif image/webp"
+                onblur="updateImage()">
+                <!-- Resumo do projeto(text) -->
+                <label for="project-resume"> Resumo do projeto:</label>
+                <textarea name="Text1" id="project-resume" name="project-resume" cols="40" rows="5" required
+                    onchange="realTimeUpdate('resume')"></textarea>
+                <!-- Tema pricipal e secundario -->
+                <div class="seletor">
+                    <label class="seletor" for="TipoPrimario"> Tema primário: </label>
+                    <select name="TipoPrimario" class="seletor mb-1" id="tipo1" form="formulario"
+                        onblur="realTimeUpdate('tema')">
+                        <option value="TI">TI</option>
+                        <option value="Jurídico">Jurídico</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Ciência e Pesquisa">Ciência e pesquisa</option>
+                        <option value="Logística">Logística</option>
+                        <option value="Governamental">Governamental</option>
+                        <option value="Marketing e Vendas">Marketing e Vendas</option>
+                        <option value="Engenharia e Exatas">Engenharia e Exatas</option>
+                    </select>
+                </div>
+                <div class="seletor">
+                    <label class="seletor" for="TipoSecundario"> Tema secundário: </label>
+                    <select name="TipoSecundario" class="seletor" id="tipo2" form="formulario"
+                        onblur="realTimeUpdate('tema')">
+                        <option value="nenhum">Nenhum</option>
+                        <option value="TI">TI</option>
+                        <option value="Jurídico">Jurídico</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Ciência e Pesquisa">Ciência e pesquisa</option>
+                        <option value="Logística">Logística</option>
+                        <option value="Governamental">Governamental</option>
+                        <option value="Marketing e Vendas">Marketing e Vendas</option>
+                        <option value="Engenharia e Exatas">Engenharia e Exatas</option>
+                    </select>
+                </div>
+                <script>
+                    var $selects = $('select');
+                    $selects.on('change', function () {
+                        var $select = $(this),
+                            $options = $selects.not($select).find('option'),
+                            selectedText = $select.children('option:selected').text();
+
+                        var $optionsToDisable = $options.filter(function () {
+                            return $(this).text() == selectedText;
+                        });
+
+                        $optionsToDisable.hide();
+                    });
+                    //to apply initial selection
+                    $selects.eq(0).trigger('change');
+                </script>
+            </form>
+            <!-- Botao criar -->
+            <button id="btn-criar" type="submit" form="formulario">Criar!</button>
+        </div>
+    </article>
+    <script src="cadastroTrabalho.js"></script>
+</body>
+
+</html>

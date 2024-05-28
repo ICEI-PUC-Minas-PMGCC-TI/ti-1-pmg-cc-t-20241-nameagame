@@ -1,0 +1,217 @@
+    /* Atribuicoes gerais */
+    :root {
+        --cor-primaria: #ed5819;
+        --cor-secundaria: #ddddc4;
+
+    }
+
+    body {
+        background-color: var(--cor-secundaria);
+    }
+
+    a#back-button {
+        color: black
+    }
+
+    a#back-button:hover {
+        color: var(--cor-primaria);
+    }
+
+    article#principal {
+        width: 95%;
+        height: 100%;
+        float: right;
+    }
+
+    /* Preview Card */
+
+    div#preview-card {
+        display: inline-block;
+        background-color: var(--cor-primaria);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 67%;
+        padding: 1%;
+        min-height: 24.5rem;
+        max-height: 100%;
+    }
+
+    #foto-div>img {
+        display: block;
+        border-radius: 10px;
+        margin-top: 2%;
+        margin-right: 5px;
+    }
+
+    img#foto-preview {
+        width: 275px;
+        height: 275px;
+    }
+
+    div#foto-div {
+        display: inline-block;
+
+    }
+
+    div.dados-preview {
+        float: right;
+        width: 66%;
+    }
+
+    div.foto-preview {
+        float: left;
+        width: 33%;
+    }
+
+    /* Formulario */
+
+
+    div#formulario {
+        float: right;
+        width: 30%;
+    }
+
+    /* Input e Texto*/
+    form.formulario>input {
+        display: block;
+        background-color: var(--cor-primaria);
+    }
+
+    input[type=text] {
+        border: 2px solid var(--cor-primaria);
+        border-radius: 4px;
+    }
+
+    form.formulario>label {
+        display: block;
+    }
+
+    /* Parte do nome */
+    form.formulario>#project-name {
+        width: 90%;
+    }
+
+    /* Parte do resumo */
+    form.formulario>#project-resume {
+        display: block;
+        background-color: var(--cor-primaria);
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    /* Parte da foto */
+    input#project-foto {
+        font-size: smaller;
+    }
+
+    #label-foto {
+        padding: 5px;
+        width: 200px;
+        background-color: var(--cor-primaria);
+        color: #000;
+        text-align: center;
+        display: block;
+        margin-top: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    #project-foto {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    /* Parte dos seletores */
+    div.seletor {
+        margin-top: 1%;
+        display: inline-block;
+        width: 40%;
+    }
+
+    div.seletor>label {
+        display: block;
+    }
+
+    form.formulario>label.seletor {
+        display: inline;
+        margin-right: 10rem;
+    }
+
+    select.seletor {
+        width: 80%;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+    }
+
+    /* Parte do buttao */
+    button#btn-criar {
+        display: inline-block;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+        width: 50%;
+        margin-left: auto;
+        margin-top: 5%;
+        color: #000;
+    }
+
+    /* Responsividade */
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+
+        /* Preview Card */
+        img#foto-preview {
+            max-width: 100%;
+            max-height: 80%;
+        }
+
+        div#preview-card {
+            min-height: 35rem;
+        }
+
+        div.dados-preview {
+            float: left;
+            width: 100%;
+            padding: 8%;
+        }
+
+        /* Parte dos seletores */
+        div.seletor {
+            margin-top: 1%;
+            display: block;
+            width: 100%;
+        }
+
+        button#btn-criar {
+            width: 80%;
+        }
+
+        form.formulario>#project-resume {
+            width: 90%;
+            border-radius: 10px;
+            min-height: 200px;
+        }
+
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* Preview Card */
+        div#foto-div {
+            width: 155px;
+            height: 155px;
+        }
+
+        img#foto-preview {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        div#preview-card {
+            min-height: 24.5rem;
+        }
+    }
