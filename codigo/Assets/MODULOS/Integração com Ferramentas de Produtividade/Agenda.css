@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand img {
+  display: flex;
+  width: 20%;
+  background-color: #f15025;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #f15025;
+  }
+
+  .agenda {
+    background-color: #f15025;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #f15025;
+  }
+
+  .agenda {
+    padding: 1% 0 0 60%;
+    background-image: url(tela_fundo.png);
+    background-position: 40%;
+  }
+}
+
+:root {
+  --primary-color: #f15025;
+  --text-color: #1d1d1d;
+  --bg-color: #f1f1fb;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+}
+
+.calendar {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px; /* Espaçamento entre o calendário e a área de tarefas */
+  margin: 2% 2% 2% 1.5%;
+
+}
+
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.calendar .header .month {
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Diminuído de 25px */
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.calendar .header .btns {
+  display: flex;
+  gap: 10px;
+}
+
+.calendar .header .btns .btn {
+  width: 40px; /* Diminuído de 50px */
+  height: 35px; /* Diminuído de 40px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--primary-color);
+  font-size: 14px; /* Diminuído de 16px */
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.calendar .header .btns .btn:hover {
+  background-color: #f15025;
+  transform: scale(1.05);
+}
+
+.weekdays {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.weekdays .day {
+  width: calc(100% / 7 - 10px);
+  text-align: center;
+  font-size: 14px; /* Diminuído de 16px */
+  font-weight: 600;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.days .day {
+  width: calc(100% / 7 - 10px);
+  height: 45px; /* Diminuído de 50px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 14px; /* Diminuído de 16px */
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.days .day:not(.next):not(.prev):hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.days .day.today {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.days .day.next,
+.days .day.prev {
+  color: #ccc;
+}
+
+.clickday {
+  color: #ccc;
+  padding: 10% 40% 20% 40%;
+}
+
+
+.days .day {
+  cursor: pointer;
+}
+
+.days .day.selected {
+  background-color: red;
+  color: white;
+}
+
+.addTarefas {
+  display: none;
+}
+
+.fixed-text {
+  padding: 5px; /* Diminuído de 10px */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px; /* Diminuído de 10px */
+  background-color: #f9f9f9;
+  font-size: 14px; /* Adicionado para diminuir o tamanho do texto */
+}
+
+.contemTarefa {
+  display: flex;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 100%; /* Ocupa toda a largura na tela */
+  margin: 10px 0; /* Espaçamento entre o calendário e a área de tarefas */
+  height: auto;
+  border-radius: 10px;
+  padding: 3%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center;
+  margin: 2% 2% 2% 1.5%;
+
+}
+
+
+.contemTarefa .Titulo  {
+  align-items: center;
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3% 3% 3% 10;
+  padding: 0% 1% 2% 1%;
+}
+
+.contemTarefa .card {
+
+background-color: #f15025;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+align-items: center;
+animation: alternate;
+margin: 1%; 
+font-size: 14px; /* Diminuído de 20px */
+padding: 0% 0% 0% 0%;
+
+
+}
+
+.contemTarefa .card-title{
+
+  align-items: center;
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  color: var(--text-color);
+  width: 100%;
+  text-align: center;
+  padding: 0% 0% 1% 0%;
+
+}
+
+/* Adicionador de Tarefas */
+.addTarefas {
+  width: 100%;
+  display: none;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 100%;
+  margin: 2% 2% 2% 1.5%;
+  height: 435px;
+  border-radius: 10px;
+  padding: 4%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+.addTarefas p {
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3%;
+  padding: 0% 0% 4% 0%;
+}
+
+.addTarefas .Titulo {
+  transition: all 0.5s;
+  display: block;
+  margin-bottom: 4%;
+  margin: 0% 0% 2% 0%;
+}
+
+.addTarefas #Botao-gravar {
+  margin: 1%;
+}
+
+.addTarefas #Botao-limpar {
+  margin: 1%;
+}
+
+.addTarefas .mb-3 {
+  font-size: 90%; /* Diminuído de 100% */
+}
+
+.tarefa-dia {
+  background-color: #f15025; /* Ou qualquer cor azul que você preferir */
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contemTarefa {
+    width: 100%; /* Ocupa toda a largura na tela */
+    margin-bottom: 10px; /* Espaçamento entre o calendário e as tarefas */
+  }
+  .addTarefas {
+    width: 100%; /* Ocupa toda a largura na tela */
+    margin-top: 10px; /* Espaçamento entre as tarefas e o calendário */
+  }
+
+  .addTarefas .p {
+
+    padding: 20%;
+  }
+
+  .calendar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.plataformas {
+  display: flex;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 100%; /* Ocupa toda a largura na tela */
+  margin: 10px 0; /* Espaçamento entre o calendário e a área de tarefas */
+  height: auto;
+  border-radius: 10px;
+  padding: 3%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center;
+}
+
+
+.plataformas .Titulo  {
+  align-items: center;
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3% 3% 3% 10;
+  padding: 0% 1% 2% 1%;
+}
+
+
+
+.IncluirPlataformas {
+  width: 100%;
+  display: none;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 100%;
+  margin: 2% 2% 2% 1.5%;
+  border-radius: 10px;
+  padding: 4%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+.IncluirPlataformas p {
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3%;
+  padding: 0% 0% 2% 0%;
+}
+
+.IncluirPlataformas .Titulo {
+  transition: all 0.5s;
+  display: block;
+  margin-bottom: 4%;
+  margin: 0% 0% 2% 0%;
+}
+
+.IncluirPlataformas #Botao-Incluir {
+  margin: 0% 1% 0% 2%;
+}
+
+.IncluirPlataformas #Botao-limparPlataformas {
+  margin: 2% 1% 0% 2%;
+}
+
+
+.IncluirPlataformas .entrada{
+  margin: 0% 0% 3% 0%;
+}
+
+.IncluirPlataformas label{
+  margin: 2% 2% 1% 1%;
+}
