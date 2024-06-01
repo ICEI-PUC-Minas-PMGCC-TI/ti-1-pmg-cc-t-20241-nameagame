@@ -64,6 +64,8 @@ body {
   background-color: var(--bg-color);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px; /* Espaçamento entre o calendário e a área de tarefas */
+  margin: 2% 2% 2% 1.5%;
+
 }
 
 .calendar .header {
@@ -197,6 +199,8 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   flex-direction: column; /* Alinha os elementos verticalmente */
   align-items: center;
+  margin: 2% 2% 2% 1.5%;
+
 }
 
 
@@ -241,12 +245,12 @@ padding: 0% 0% 0% 0%;
 /* Adicionador de Tarefas */
 .addTarefas {
   width: 100%;
-  display: flex;
+  display: none;
   color: var(--text-color);
   background-color: #f1f1fb;
   transition: all 0.5s;
   width: 100%;
-  margin: 2% 0 2% 1.5%;
+  margin: 2% 2% 2% 1.5%;
   height: 435px;
   border-radius: 10px;
   padding: 4%;
@@ -310,4 +314,85 @@ padding: 0% 0% 0% 0%;
     width: 100%;
     margin-bottom: 10px;
   }
+}
+
+.plataformas {
+  display: flex;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 100%; /* Ocupa toda a largura na tela */
+  margin: 10px 0; /* Espaçamento entre o calendário e a área de tarefas */
+  height: auto;
+  border-radius: 10px;
+  padding: 3%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center;
+}
+
+
+.plataformas .Titulo  {
+  align-items: center;
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3% 3% 3% 10;
+  padding: 0% 1% 2% 1%;
+}
+
+
+
+.IncluirPlataformas {
+  width: 100%;
+  display: none;
+  color: var(--text-color);
+  background-color: #f1f1fb;
+  transition: all 0.5s;
+  width: 100%;
+  margin: 2% 2% 2% 1.5%;
+  border-radius: 10px;
+  padding: 4%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+}
+
+.IncluirPlataformas p {
+  transition: all 0.5s;
+  font-size: 16px; /* Diminuído de 20px */
+  font-weight: 550;
+  color: var(--text-color);
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin: 3%;
+  padding: 0% 0% 2% 0%;
+}
+
+.IncluirPlataformas .Titulo {
+  transition: all 0.5s;
+  display: block;
+  margin-bottom: 4%;
+  margin: 0% 0% 2% 0%;
+}
+
+.IncluirPlataformas #Botao-Incluir {
+  margin: 0% 1% 0% 2%;
+}
+
+.IncluirPlataformas #Botao-limparPlataformas {
+  margin: 2% 1% 0% 2%;
+}
+
+
+.IncluirPlataformas .entrada{
+  margin: 0% 0% 3% 0%;
+}
+
+.IncluirPlataformas label{
+  margin: 2% 2% 1% 1%;
 }
