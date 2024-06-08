@@ -380,13 +380,95 @@ padding: 0% 0% 0% 0%;
   margin: 0% 0% 2% 0%;
 }
 
+
+.plataformas .ContemPlataformas{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+
+
+}
+
+.plataformas .ContemPlataformas div {
+  
+  width: 9rem;
+  margin: 1% 1% 1% 1%;
+  padding: 1% 1% 1% 7%;
+  border-radius: 8%;
+
+  }
+
+  
+.plataformas .ContemPlataformas img {
+  
+  border-radius: 8%;
+
+  }
+
+  .plataformas .ContemPlataformas .card {
+  
+    border: 1px solid black;
+    border-radius: 8%;
+    
+  
+    }
+
+
+  .plataformas .ContemPlataformas ul {
+
+      border-radius: 10%;
+      
+      
+    }
+
+  .plataformas .ContemPlataformas ul li {
+
+      border-radius: 20%;
+      height: max-content;
+      
+    }     
+
+
+
+
+.plataformas .ContemPlataformas a {
+
+  text-decoration: none;
+  text-align: center;
+  
+  }
+
+/* btns */
 .IncluirPlataformas #Botao-Incluir {
   margin: 0% 1% 0% 2%;
 }
 
+.IncluirPlataformas #Botao-Incluir:active {
+  padding: 1% 1% 1% 1%;
+  }
+
+
+
+.plataformas #Botao-AbaPlataforma {
+  margin: 3% 0% 3% 0%;
+}
+
+.plataformas #Botao-AbaPlataforma:active {
+padding: 1% 1% 1% 1%;
+}
+
+
 .IncluirPlataformas #Botao-limparPlataformas {
   margin: 2% 1% 0% 2%;
 }
+
+.IncluirPlataformas #Botao-limparPlataformas:active {
+  padding: 1% 1% 1% 1%;
+  }
+/* END btns  */
+
 
 
 .IncluirPlataformas .entrada{

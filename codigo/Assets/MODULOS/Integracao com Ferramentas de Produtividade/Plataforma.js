@@ -85,12 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
         plataformaDiv.classList.add('plataforma'); // Adicione uma classe para estilizar
 
         plataformaDiv.innerHTML = `
-          <div class="card" style="width: 18rem;">
-          <img src="${plataforma.Logo}" alt="${plataforma.Nome_da_plataforma} Logo">
+        <a href="${plataforma.Link}" target="_blank" ><div class="card">
+          <img src="${plataforma.Logo}" alt="${plataforma.Nome_da_plataforma}">
           <ul class="list-group list-group-flush">
-          <a href="${plataforma.Link}" target="_blank"><li class="list-group-item">${plataforma.Nome_da_plataforma}</li></a>
+          <li class="list-group-item" >${plataforma.Nome_da_plataforma}</li>
           </ul>
-        </div>
+        </div></a>
         `;
 
         console.log(plataforma.Logo)  
