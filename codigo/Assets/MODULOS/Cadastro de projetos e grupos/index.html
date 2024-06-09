@@ -15,7 +15,7 @@
     <title>Daigaku - Criação de Projeto</title>
 </head>
 
-<body onload=initData(),updateProjectCard()>
+<body onload=initData()>
     <!-- Botao de return -->
     <a id="back-button" href=""><i class="fa-solid fa-circle-arrow-left mt-4 mx-1 fa-xl"></i></a>
     <!-- Parte principal -->
@@ -104,7 +104,8 @@
                 </script>
             </form>
             <!-- Botao criar -->
-            <button id="btn-criar" type="submit" form="formulario">Criar!</button>
+            <button id="btn-criar" type="submit" form="formulario" onclick=updateData()>Criar!</button>
+            <button id="btn-criar" onclick=load()>Carregar Outro</button>
         </div>
     </article>
     <script src="cadastroTrabalho.js"></script>
