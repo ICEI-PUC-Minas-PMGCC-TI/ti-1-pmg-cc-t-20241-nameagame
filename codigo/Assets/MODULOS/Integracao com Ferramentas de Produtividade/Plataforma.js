@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     Plataformas.Plataformas.push({
-      id: id,
+      id: id, //FAZ ALTOMATICO
       Logo: Linkdalogo, // Adicione a propriedade "Logo"
       Nome_da_plataforma: Nomedaplataforma,
       Não_quero_ver: false,
