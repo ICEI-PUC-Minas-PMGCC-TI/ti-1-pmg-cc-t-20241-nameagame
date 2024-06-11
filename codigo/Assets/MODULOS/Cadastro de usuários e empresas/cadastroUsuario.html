@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/b0dc0539e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Daigaku - Cadastro</title>
+</head>
+
+<body>
+    <!-- Botao de return -->
+    <a id="back-button" href=""><i class="fa-solid fa-circle-arrow-left mt-4 mx-1 fa-xl"></i></a>
+    <!-- Parte formulário -->
+    <article id="principalUsuario">
+        <div id="crudUsu" class="mt-3">
+            <h4 class="text-center"> Criação de conta pessoal</h4>
+            <form id="UsuForm">
+                <label for="uname">Nome: </label>
+                <input type="text" id="uname" name="uname">
+                <label for="udominio">Nome da instituição de ensino: </label>
+                <input type="text" id="udominio" name="udominio">
+                <label for="ucurso">Curso: </label>
+                <input type="text" id="ucurso" name="ucurso">
+                <label for="uemail">E-mail: </label>
+                <input type="email" id="uemail" name="uemail">
+                <label for="utele">Telefone: </label>
+                <input type="number" id="utele" name="utele">
+                <label for="usenha">Senha: </label>
+                <input type="password" id="usenha" name="usenha">
+                <label for="uconfirmsenha">Confirme sua senha: </label>
+                <input type="password" id="uconfirmsenha" name="uconfirmsenha">
+            </form>
+            <p class="text-center mt-1" id="ErrorMsg"></p>
+            <button class="mt-1" id="btnCriarUsu" onclick=criarUsu()>Criar conta</button>
+        </div>
+    </article>
+    <!-- Imagem e botão para o login -->
+    <div id="logoCadastro">
+        <img src="logo.png">
+        <a href="login.html">Já tenho login</a>
+    </div>
+    <script src="cadastroUsuario.js"></script>
+</body>
+
+</html>

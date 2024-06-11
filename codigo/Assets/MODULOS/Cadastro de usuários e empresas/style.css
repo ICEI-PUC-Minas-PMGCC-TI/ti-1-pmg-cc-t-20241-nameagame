@@ -1,0 +1,347 @@
+    /* Atribuicoes gerais */
+    :root {
+        --cor-primaria: #ed5819;
+        --cor-secundaria: #ddddc4;
+
+    }
+
+    body {
+        background-color: var(--cor-secundaria);
+    }
+
+    a#back-button {
+        float: inline-start;
+        color: black;
+        margin-right: 2%;
+    }
+
+    a#back-button:hover {
+        color: var(--cor-primaria);
+    }
+
+    article#principal {
+        width: 95%;
+        height: 100%;
+        float: right;
+    }
+
+    article#principalUsuario {
+        width: 60%;
+        height: 100%;
+        float: left;
+    }
+
+    /* Cadastro de usuario */
+
+    div#crudUsu {
+        width: 100%;
+        background-color: var(--cor-primaria);
+        border-radius: 10px;
+        padding: 0.5%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    form#UsuForm>label {
+        display: block;
+        width: 60%;
+        margin-left: 10%;
+    }
+
+    form#UsuForm>input {
+        display: block;
+        border: 2px solid var(--cor-primaria);
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #ErrorMsg {
+        color: rgb(78, 0, 0);
+    }
+
+    button#btnCriarUsu {
+        display: block;
+        border-radius: 50px;
+        background-color: var(--cor-primaria);
+        width: 25%;
+        margin-left: 37.5%;
+        padding: 5px;
+        color: #fff;
+        font-size: x-large;
+
+    }
+
+    div#logoCadastro {
+        display: inline-block;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    div#logoCadastro>img {
+        display: block;
+    }
+
+    div#logoCadastro>a {
+        display: flex;
+        float: left;
+        margin-left: 35%;
+        color: darkslategrey;
+    }
+
+    /* Login */
+    div#login {
+        margin-top: 5%;
+        width: 40%;
+        margin-left: 27.5%;
+        background-color: var(--cor-primaria);
+        border-radius: 10px;
+        padding: 0.5%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        height: 20rem;
+    }
+
+    form#login>label {
+        display: block;
+        width: 60%;
+        margin-left: 10%;
+    }
+
+    form#login>input {
+        display: block;
+        border: 2px solid var(--cor-primaria);
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    article#login {
+        width: 95%;
+        height: 100%;
+        float: right;
+    }
+
+    /*
+
+    
+    A partir daqui, esse style está direcionado para outras funcionalidades
+    
+    
+
+    */
+
+
+
+
+
+    /* Arquivo */
+
+    div#arquivo {
+        position: relative;
+        width: 33%;
+        height: 30rem;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+        transition: width 2s;
+    }
+
+    div#arquivo>button#btnArquivo {
+        background-color: var(--cor-primaria);
+        border: none;
+        position: absolute;
+        top: 50%;
+        transition: left 2s;
+        left: 95%;
+    }
+
+    #addfile {
+        margin-left: 2%;
+        width: 33%;
+        height: 20%;
+        position: absolute;
+        left: 0%;
+        top: 1.2%;
+    }
+
+    #adicionarFile {
+        max-height: 40%;
+        background-color: var(--cor-primaria);
+        margin-top: 2px;
+        cursor: pointer;
+        color: var(--cor-secundaria);
+    }
+
+    #fileAdd {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    #followBtn {
+        height: 60%;
+        display: none;
+        float: right;
+
+    }
+
+    div.folder {
+        padding: 2%;
+        margin-bottom: 5%;
+        padding-left: 4%;
+    }
+
+    /* Input e Texto*/
+    form.formulario>input {
+        display: block;
+        background-color: var(--cor-primaria);
+    }
+
+    input[type=text] {
+        border: 2px solid var(--cor-primaria);
+        border-radius: 4px;
+    }
+
+    form.formulario>label {
+        display: block;
+    }
+
+
+
+    /* Parte do nome */
+    form.formulario>#project-name {
+        width: 90%;
+    }
+
+    /* Parte do resumo */
+    form.formulario>#project-resume {
+        display: block;
+        background-color: var(--cor-primaria);
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    /* Parte da foto */
+    input#project-foto {
+        font-size: smaller;
+    }
+
+    #label-foto {
+        padding: 5px;
+        width: 200px;
+        background-color: var(--cor-primaria);
+        color: #000;
+        text-align: center;
+        display: block;
+        margin-top: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    #project-foto {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    /* Parte dos seletores */
+    div.seletor {
+        margin-top: 1%;
+        display: inline-block;
+        width: 40%;
+    }
+
+    div.seletor>label {
+        display: block;
+    }
+
+    form.formulario>label.seletor {
+        display: inline;
+        margin-right: 10rem;
+    }
+
+    select.seletor {
+        width: 80%;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+    }
+
+    /* Parte do buttao */
+    button#btn-criar {
+        display: inline-block;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+        width: 50%;
+        margin-left: auto;
+        margin-top: 5%;
+        color: #000;
+    }
+
+    /* Responsividade */
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+
+        /* Preview Card */
+        img#foto-preview {
+            max-width: 100%;
+            max-height: 80%;
+        }
+
+        div#preview-card {
+            min-height: 35rem;
+        }
+
+        div.dados-preview {
+            float: left;
+            width: 100%;
+            padding: 8%;
+        }
+
+        /* Parte dos seletores */
+        div.seletor {
+            margin-top: 1%;
+            display: block;
+            width: 100%;
+        }
+
+        button#btn-criar {
+            width: 80%;
+        }
+
+        form.formulario>#project-resume {
+            width: 90%;
+            border-radius: 10px;
+            min-height: 200px;
+        }
+
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* Preview Card */
+        div#foto-div {
+            width: 155px;
+            height: 155px;
+        }
+
+        img#foto-preview {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        div#preview-card {
+            min-height: 24.5rem;
+        }
+    }
