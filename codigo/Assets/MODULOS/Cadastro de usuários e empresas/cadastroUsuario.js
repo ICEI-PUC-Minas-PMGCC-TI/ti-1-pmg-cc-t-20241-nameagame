@@ -110,7 +110,7 @@ function loginB(data) {
     while (x < data.length && !false) {
         if (data[x].Email == email.value && data[x].Senha == senha.value) {
             alert("Login efeituado com sucesso");
-            // Mudaria para proxima pagina logo em seguida
+            // Mudaria para proxima pagina logo em seguida      
             Erro.innerHTML = ""; // limpar caixa de erro
             sessionStorage.setItem('login', JSON.stringify(data[x].id)); //salva no session storage o id do usuario logado
             y = true;

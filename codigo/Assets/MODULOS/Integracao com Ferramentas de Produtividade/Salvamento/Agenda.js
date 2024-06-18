@@ -11,9 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const limparBtn = document.querySelector("#Botao-limpar");
 
 
-  //--------------------------------FUNÇÕES JSONServer-----------------------------------//
-
-
   const dataURL = 'https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev';
 
   /**
@@ -41,29 +38,45 @@ document.addEventListener("DOMContentLoaded", () => {
   /**
    * Apaga do JSON server os objetos
    */
-  // Função para excluir as tarefas do dia
-  function DeleteTarefasDia(dia) {
-    fetch(`${dataURL}/Tarefas/${dia}`, {
-      method: 'DELETE'
-    })
-    .then(response => {
-      if (response.ok) {
-        console.log(`Tarefas do dia ${dia} excluídas com sucesso.`);
-        readDataAllTarefas(displayTarefas, dia); // Atualiza a lista de tarefas após a exclusão
-      } else {
-        console.error('Erro ao excluir tarefas:', response.statusText);
-      }
-    })
-    .catch(error => {
-      console.error('Erro ao excluir tarefas:', error);
-    });
+  function DeleteAllTarefas(dia) {
+    fetch(`${dataURL}/Tarefas/${dia}`)
+      .then(response => response.json())
+      .then(data => {
+        const deletePromises = data.map(plataforma => {
+          return fetch(`${dataURL}/Plataformas/${plataforma.id}`, {
+            method: 'DELETE',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          });
+        });
+
+        Promise.all(deletePromises)
+          .then(results => {
+            results.forEach(result => {
+              if (result.ok) {
+                console.log('Plataforma deletada com sucesso');
+              } else {
+                console.error('Erro ao deletar a plataforma');
+              }
+            });
+            alert("Plataformas deletadas com sucesso");
+            renderizarPlataformas([]); // Limpa a visualização atual
+          })
+          .catch(error => {
+            console.error('Erro ao deletar as plataformas:', error);
+          });
+      })
+      .catch(error => {
+        console.error('Erro ao obter as plataformas:', error);
+      });
   }
 
-  function readDataAllTarefas(FunctionCallBack, dia) {
-    fetch(`${dataURL}/Tarefas?dia=${dia}`)
+  function readDataAllTarefas(FunctionCallBack) {
+    fetch(`${dataURL}//Tarefas`)
       .then((res) => res.json())
       .then(data => {
-        FunctionCallBack(dia, data);
+        FunctionCallBack(data);
         return data;
       })
       .catch(error => {
@@ -74,113 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //-------------------------------- END - FUNÇÕES JSONServer -----------------------------------//
 
 
-
-  //--------------------------------EventListener - BOtÕES-----------------------------------//
-
- 
-  gravarBtn.addEventListener("click", toggleEditMode);
-  limparBtn.addEventListener("click", ExcluiTarefas);
   
-
-  //--------------------------------End - EventListener BOtÕES-----------------------------------//
-
-
- //--------------------------------Funções Tarefas-----------------------------------//
-
-  // Função para salvar as tarefas
-  function salvarTarefa() {
-    const dia = parseInt(diaSelecionadoInput.value); // Converte para inteiro
-    const nomeTarefa = document.getElementById("NomaTarefa").value;
-    const descricaoTarefa = document.getElementById("DescriçãoTarefa").value;
-
-
-    // Criamos o objeto `novaTarefa`
-    // Adicionamar uma propriedade dinâmica ao objeto `novaTarefa` // A fazer
-    let novaTarefa = { // .push() // A fazer
-        id: dia,  
-        dia: dia,
-        nome: nomeTarefa,
-        descricao: descricaoTarefa,
-        feito: false,
-        cor: "#FFFFFF"
-    };
-
-    saveDataTarefas(novaTarefa);
-    console.log(novaTarefa);
-    readDataAllTarefas(displayTarefas, diaSelecionadoInput.value);
-
-  }
-
-  // Função para exibir as tarefas
-  function displayTarefas(dia, tarefa) {
-    Abatarefas.innerHTML = ''; // Limpa a lista de tarefas
-
-    fetch(`https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev/Tarefas?dia=${dia}`)
-      .then(response => response.json())
-      .then(tarefas => {
-        tarefas.forEach(tarefa => {
-          // Criar o elemento da tarefa
-          const tarefaElement = document.createElement("div");
-          tarefaElement.classList.add("card");
-          tarefaElement.style.width = "20rem";
-
-          // Criar os elementos internos
-          const cardBody = document.createElement("div");
-          cardBody.classList.add("card-body");
-
-          const cardTitle = document.createElement("h5");
-          cardTitle.classList.add("card-title");
-          cardTitle.innerHTML = `<strong>${tarefa.nome}</strong>`;
-
-          const cardText = document.createElement("p");
-          cardText.classList.add("card-text");
-          cardText.textContent = tarefa.descricao;
-
-          // Adicionar os elementos filhos
-          cardBody.appendChild(cardTitle);
-          cardBody.appendChild(cardText);
-
-          // Adicionar o cardBody à tarefaElement
-          tarefaElement.appendChild(cardBody);
-
-          // Adicionar a tarefa à página
-          Abatarefas.appendChild(tarefaElement);
-        });
-      })
-      .catch(error => {
-        console.error('Erro ao carregar tarefas:', error);
-      });
-  }
-
-  // Função para alternar entre modo de edição e visualização
-  function toggleEditMode() {
-    const nomeInput = document.getElementById("NomaTarefa");
-    const descricaoTextarea = document.getElementById("DescriçãoTarefa");
-
-      salvarTarefa();
-
-      nomeInput.value = "";
-      descricaoTextarea.value = "";
-
-      if (tarefas.style.display == "flex") {
-        tarefas.style.display = "none";
-      } else {
-        tarefas.style.display = "flex";
-      }
-  }
-
-  // Função para limpar as tarefas
-  function ExcluiTarefas() {
-    Abatarefas.innerHTML = ""; // Limpa o conteúdo do container das tarefas
-    DeleteTarefasDia(diaSelecionadoInput.value); // Excluir as tarefas do dia selecionado
-
-  }
-
-//--------------------------------END - Funções Tarefas-----------------------------------//
-
-
-//--------------------------------Funções Calendario-----------------------------------//
-
   const months = [
     "Jan",
     "Fev",
@@ -283,13 +190,149 @@ document.addEventListener("DOMContentLoaded", () => {
         diaSelecionadoInput.value = e.target.innerText;
 
         // Carregar as tarefas do dia selecionado
-        readDataAllTarefas(displayTarefas, diaSelecionadoInput.value);
-
+        displayTarefas(diaSelecionadoInput.value);
       });
     });
   }
 
+  // Função para salvar as tarefas
+  function salvarTarefa() {
+    const dia = parseInt(diaSelecionadoInput.value); // Converte para inteiro
+    const nomeTarefa = document.getElementById("NomaTarefa").value;
+    const descricaoTarefa = document.getElementById("DescriçãoTarefa").value;
 
+    const novaTarefa = {
+        id: dia,
+        dia: dia,
+        nome: nomeTarefa,
+        descricao: descricaoTarefa,
+        feito: false,
+        cor: "#FFFFFF"
+    }
+
+    saveDataTarefas(novaTarefa);
+    console.log(novaTarefa);
+    readDataAllTarefas(displayTarefas, dia);
+  }
+
+  // Função para excluir as tarefas
+  function excluirTarefa(dia) {
+    fetch(`https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev/Tarefas/${dia}`, {
+      method: 'DELETE'
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log(`Tarefas do dia ${dia} excluídas com sucesso.`);
+        displayTarefas(dia); // Atualiza a lista de tarefas após a exclusão
+      } else {
+        console.error('Erro ao excluir tarefas:', response.statusText);
+      }
+    })
+    .catch(error => {
+      console.error('Erro ao excluir tarefas:', error);
+    });
+  }
+
+  // Função para exibir as tarefas
+  function displayTarefas(dia) {
+    Abatarefas.innerHTML = ''; // Limpa a lista de tarefas
+
+    fetch(`https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev/Tarefas?dia=${dia}`)
+      .then(response => response.json())
+      .then(tarefas => {
+        tarefas.forEach(tarefa => {
+          // Criar o elemento da tarefa
+          const tarefaElement = document.createElement("div");
+          tarefaElement.classList.add("card");
+          tarefaElement.style.width = "20rem";
+
+          // Criar os elementos internos
+          const cardBody = document.createElement("div");
+          cardBody.classList.add("card-body");
+
+          const cardTitle = document.createElement("h5");
+          cardTitle.classList.add("card-title");
+          cardTitle.innerHTML = `<strong>${tarefa.nome}</strong>`;
+
+          const cardText = document.createElement("p");
+          cardText.classList.add("card-text");
+          cardText.textContent = tarefa.descricao;
+
+          // Adicionar os elementos filhos
+          cardBody.appendChild(cardTitle);
+          cardBody.appendChild(cardText);
+
+          // Adicionar o cardBody à tarefaElement
+          tarefaElement.appendChild(cardBody);
+
+          // Adicionar a tarefa à página
+          Abatarefas.appendChild(tarefaElement);
+        });
+      })
+      .catch(error => {
+        console.error('Erro ao carregar tarefas:', error);
+      });
+  }
+
+  // Função para alternar entre modo de edição e visualização
+  function toggleEditMode() {
+    const nomeInput = document.getElementById("NomaTarefa");
+    const descricaoTextarea = document.getElementById("DescriçãoTarefa");
+    const dia = diaSelecionadoInput.value;
+
+    if (gravarBtn.innerText === "Gravar") {
+      const nomeTarefa = nomeInput.value;
+      const descricaoTarefa = descricaoTextarea.value;
+
+      // Criar o elemento da tarefa
+      const tarefaElement = document.createElement("div");
+      tarefaElement.classList.add("card");
+      tarefaElement.style.width = "20rem";
+
+      // Criar os elementos internos
+      const cardBody = document.createElement("div");
+      cardBody.classList.add("card-body");
+
+      const cardTitle = document.createElement("h5");
+      cardTitle.classList.add("card-title");
+      cardTitle.innerHTML = `<strong>${nomeTarefa}</strong>`;
+
+      const cardText = document.createElement("p");
+      cardText.classList.add("card-text");
+      cardText.textContent = descricaoTarefa;
+
+      // Adicionar os elementos filhos
+      cardBody.appendChild(cardTitle); 
+      cardBody.appendChild(cardText); 
+
+      // Adicionar o cardBody à tarefaElement
+      tarefaElement.appendChild(cardBody); 
+
+      // Adicionar a tarefa à página
+      Abatarefas.appendChild(tarefaElement);
+
+      salvarTarefa();
+      displayTarefas(dia);
+
+      nomeInput.value = "";
+      descricaoTextarea.value = "";
+
+      // Incrementar a contagem de tarefas
+
+      gravarBtn.innerText = "Gravar";
+
+    }
+  }
+
+  // Função para limpar as tarefas
+  function ExcluiTarefas() {
+    Abatarefas.innerHTML = ""; // Limpa o conteúdo do container das tarefas
+    excluirTarefa(diaSelecionadoInput.value); // Excluir as tarefas do dia selecionado
+
+  }
+
+  gravarBtn.addEventListener("click", toggleEditMode);
+  limparBtn.addEventListener("click", ExcluiTarefas);
 
   // Botão para o próximo mês
   nextBtn.addEventListener("click", () => {
@@ -301,8 +344,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     renderCalendar();
   });
-
-  
 
   // Botão para o mês anterior
   prevBtn.addEventListener("click", () => {
@@ -322,8 +363,6 @@ document.addEventListener("DOMContentLoaded", () => {
     anoATUAL = date.getFullYear();
     renderCalendar();
   });
-
-
 
   // Esconder o botão "hoje" se já for o mês atual e vice-versa
   function hideTodayBtn() {
@@ -349,6 +388,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderCalendar();
 });   
-
-
-//--------------------------------END - Funções Calendario-----------------------------------//
