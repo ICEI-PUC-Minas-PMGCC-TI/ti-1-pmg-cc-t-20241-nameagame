@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/edit.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="userPhoto">
+                        <img id="userImage" src="https://picsum.photos/200/300" alt="Imagem Aleatória">
+                    </div>
+                    <div class="userTopics">
+                        <div id="universidade">
+                            <img src="assets/faculdade.png">
+                        </div>
+                        <div id="origem">
+                            <img src="assets/origem.png">
+                        </div>
+                        <div id="idade">
+                            <img src="assets/idade.png">
+                        </div>
+                        <div id="area">
+                            <img src="assets/area.png">
+                        </div>
+                        <div id="graduacoes">
+                            <img src="assets/graduacoes.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h1 class="userName" id="userName">Nome do Usuário</h1>
+                    <span class="userRating">5.0</span>
+                    <div class="userText" id="userText">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quos reiciendis, veritatis, maxime quasi odio officiis esse autem accusantium sint veniam est? Vero molestiae cupiditate assumenda placeat itaque dolores modi?
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3" onclick="window.location.href='edit_profile.html'">Editar Perfil</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/view_profile.js"></script>
+</body>
+</html>
