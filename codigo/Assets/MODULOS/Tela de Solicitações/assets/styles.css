@@ -1,0 +1,81 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ddddc4 !important; /* Cor de fundo bege */
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #ed5819 !important; /* Cor de fundo laranja para o cabeçalho da tabela */
+    font-weight: bolder !important;
+}
+
+table thead th {
+    color: black !important; /* Alterado para uma cor legível, como preto */
+    padding: 10px !important;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.img-thumbnail {
+    border-radius: 50% !important;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Estilização dos botões */
+.btn-success, .btn-danger {
+    border-radius: 10px;
+}
+
+.btn-success {
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    color: white !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: white !important;
+}
+
+.btn-success:hover {
+    background-color: #218838 !important;
+}
+
+.btn-danger:hover {
+    background-color: #c82333 !important;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #ed5819; /* Cor de fundo laranja */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}

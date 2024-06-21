@@ -1,0 +1,66 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ddddc4 !important;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+    margin-bottom: 20px;
+}
+
+.userPhoto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.userTopics div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.userTopics img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.userName {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.userRating {
+    font-size: 1.2em;
+    color: #ed5819;
+}
+
+.userText {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #ed5819;
+    border-color: #ed5819;
+}
+
+.btn-primary:hover {
+    background-color: #e04e1b;
+    border-color: #e04e1b;
+}

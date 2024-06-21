@@ -1,0 +1,41 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ddddc4 !important;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form .form-control {
+    margin-bottom: 10px;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+}
+
+form .btn-primary {
+    background-color: #ed5819;
+    border-color: #ed5819;
+}
+
+form .btn-primary:hover {
+    background-color: #e04e1b;
+    border-color: #e04e1b;
+}
