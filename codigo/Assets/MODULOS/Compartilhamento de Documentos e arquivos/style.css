@@ -1,0 +1,1028 @@
+    /*--------------------- Atribuições Gerais --------------------- */
+    :root {
+        --cor-primaria: #ed5819;
+        --cor-secundaria: #ddddc4;
+        --text-color: #1d1d1d;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background-color: var(--cor-secundaria);
+    }
+
+    a#back-button {
+        float: inline-start;
+        color: black;
+        margin-right: 2%;
+    }
+
+    a#back-button:hover {
+        color: var(--cor-primaria);
+    }
+
+    article#principal {
+        width: 95%;
+        height: 100%;
+        float: right;
+    }
+
+    article#principalUsuario {
+        width: 60%;
+        height: 100%;
+        float: left;
+    }
+
+    .navbar-brand img {
+        display: flex;
+        width: 20%;
+        background-color: #f15025;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 10%;
+    }
+
+    /*--------------------- Fim Atribuições Gerais --------------------- */
+
+    /*---------------------  Home Page --------------------- */
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.homepage {
+        background-color: var(--cor-secundaria) !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #logo {
+        /* Ajuste o tamanho da logo aqui */
+        height: auto;
+        width: 20%;
+        /* Alterar para o tamanho desejado */
+    }
+
+    #title {
+        font-family: 'Arial Black', Gadget, sans-serif;
+        color: black;
+        font-size: 4.5em;
+        /* Ajustar o tamanho do título aqui */
+        margin-bottom: 20px;
+        padding: 0.11%;
+    }
+
+    .bg-orange {
+        background-color: var(--cor-primaria);
+        border-radius: 8px;
+        padding: 30px;
+        /* Ajustar o padding da caixa aqui */
+        width: 85%;
+        /* Ajustar a largura da caixa aqui */
+        margin: 0 auto;
+        /* Ajuste a altura da caixa aqui */
+        margin-top: -0.1%;
+        /* Ajustar conforme necessário para subir a caixa */
+        margin-bottom: 30%;
+    }
+
+    #description-box p {
+        color: white;
+        font-size: 1.3em;
+        /* Ajustar o tamanho do texto aqui */
+    }
+
+    .btn-dark {
+        background-color: #000000 !important;
+        border-color: #000000 !important;
+        color: white !important;
+        font-size: 1.2em;
+        /* Ajustar o tamanho do texto dos botões aqui */
+        padding: 10px 20px;
+        /* Ajustar o padding dos botões aqui */
+    }
+
+    #grupo-img {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        height: 40vh;
+        /* Ajustar a altura da imagem aqui */
+        width: auto;
+        /* Mantém a proporção da imagem */
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    /*---------------------  Fim Home Page --------------------- */
+
+
+
+    /*--------------------- Cadastro Projeto --------------------- */
+
+     /* Preview Card */
+
+     div#preview-card {
+        display: inline-block;
+        background-color: var(--cor-primaria);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 67%;
+        padding: 1%;
+        min-height: 24.5rem;
+        max-height: 100%;
+    }
+
+    #foto-div>img {
+        display: block;
+        border-radius: 10px;
+        margin-top: 2%;
+        margin-right: 5px;
+    }
+
+    img#foto-preview {
+        width: 275px;
+        height: 275px;
+    }
+
+    div#foto-div {
+        display: inline-block;
+
+    }
+
+    div.dados-preview {
+        float: right;
+        width: 66%;
+    }
+
+    div.foto-preview {
+        float: left;
+        width: 33%;
+    }
+
+    /* Formulario */
+
+
+    div#formulario {
+        float: right;
+        width: 30%;
+    }
+
+    /* Input e Texto*/
+    form.formulario>input {
+        display: block;
+        background-color: var(--cor-primaria);
+    }
+
+    input[type=text] {
+        border: 2px solid var(--cor-primaria);
+        border-radius: 4px;
+    }
+
+    form.formulario>label {
+        display: block;
+    }
+
+
+
+    /*---------- Parte do nome ------------*/
+    form.formulario>#project-name {
+        width: 90%;
+    }
+
+    /* Parte do resumo */
+    form.formulario>#project-resume {
+        display: block;
+        background-color: var(--cor-primaria);
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    /* Parte da foto */
+    input#project-foto {
+        font-size: smaller;
+    }
+
+    #label-foto {
+        padding: 5px;
+        width: 200px;
+        background-color: var(--cor-primaria);
+        color: #000;
+        text-align: center;
+        display: block;
+        margin-top: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    #project-foto {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    /* Parte dos seletores */
+    div.seletor {
+        margin-top: 1%;
+        display: inline-block;
+        width: 40%;
+    }
+
+    div.seletor>label {
+        display: block;
+    }
+
+    form.formulario>label.seletor {
+        display: inline;
+        margin-right: 10rem;
+    }
+
+    select.seletor {
+        width: 80%;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+    }
+
+    /* Parte do buttao */
+    button#btn-criar {
+        display: inline-block;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+        width: 50%;
+        margin-left: auto;
+        margin-top: 5%;
+        color: #000;
+    }
+
+
+    /*--------------------- Fim Cadastro Projeto ---------------------*/
+
+
+    /* --------------------- Cadastro de usuario --------------------- */
+
+    div#crudUsu {
+        width: 100%;
+        background-color: var(--cor-primaria);
+        border-radius: 10px;
+        padding: 0.5%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    form#UsuForm>label {
+        display: block;
+        width: 60%;
+        margin-left: 10%;
+    }
+
+    form#UsuForm>input {
+        display: block;
+        border: 2px solid var(--cor-primaria);
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #ErrorMsg {
+        color: rgb(78, 0, 0);
+    }
+
+    button#btnCriarUsu {
+        display: block;
+        border-radius: 50px;
+        background-color: var(--cor-primaria);
+        width: 25%;
+        margin-left: 37.5%;
+        padding: 5px;
+        color: #fff;
+        font-size: x-large;
+
+    }
+
+    div#logoCadastro {
+        display: inline-block;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    div#logoCadastro>img {
+        display: block;
+    }
+
+    div#logoCadastro>a {
+        display: flex;
+        float: left;
+        margin-left: 35%;
+        color: darkslategrey;
+    }
+
+    /* --------------------- Fim cadastro de usuario --------------------- */
+
+    /* --------------------- Login --------------------- */
+
+    div#login {
+        margin-top: 5%;
+        width: 40%;
+        margin-left: 27.5%;
+        background-color: var(--cor-primaria);
+        border-radius: 10px;
+        padding: 0.5%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        height: 20rem;
+    }
+
+    form#login>label {
+        display: block;
+        width: 60%;
+        margin-left: 10%;
+    }
+
+    form#login>input {
+        display: block;
+        border: 2px solid var(--cor-primaria);
+        border-radius: 10px;
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    article#login {
+        width: 95%;
+        height: 100%;
+        float: right;
+    }
+
+    /* --------------------- Fim Login --------------------- */
+
+    /* --------------------- Agenda --------------------- */
+
+    @media (max-width: 600px) {
+        .agenda {
+            background-color: var(--cor-secundaria);
+            max-width: 100%;
+            padding: 0;
+        }
+        article#main{
+            background-color: var(--cor-secundaria) !important;
+        }
+    }
+
+    @media (min-width: 600px) {
+        article#main{
+            background-color: var(--cor-secundaria) !important;
+            display: flex;
+        }
+        .agenda {
+            padding: 1% 0 0 60%;
+            background-color: var(--cor-secundaria);
+            background-position: 40%;
+        }
+    }
+
+    .container {
+        width: 40% !important;
+        min-height: 100vh;
+        display: flex;
+        float:right;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* Alinha os elementos verticalmente */
+    }
+
+    .calendar {
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 20px;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        /* Espaçamento entre o calendário e a área de tarefas */
+        margin: 2% 2% 2% 1.5%;
+
+    }
+
+    .calendar .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .calendar .header .month {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        /* Diminuído de 25px */
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    .calendar .header .btns {
+        display: flex;
+        gap: 10px;
+    }
+
+    .calendar .header .btns .btn {
+        width: 40px;
+        /* Diminuído de 50px */
+        height: 35px;
+        /* Diminuído de 40px */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: #fff;
+        background-color: var(--cor-secundaria);
+        font-size: 14px;
+        /* Diminuído de 16px */
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    .calendar .header .btns .btn:hover {
+        background-color: #000;
+        transform: scale(1.05);
+    }
+
+    .weekdays {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .weekdays .day {
+        width: calc(100% / 7 - 10px);
+        text-align: center;
+        font-size: 14px;
+        /* Diminuído de 16px */
+        font-weight: 600;
+    }
+
+    .days {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .days .day {
+        width: calc(100% / 7 - 10px);
+        height: 45px;
+        /* Diminuído de 50px */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        font-size: 14px;
+        /* Diminuído de 16px */
+        font-weight: 400;
+        color: var(--text-color);
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+
+    .days .day:not(.next):not(.prev):hover {
+        color: #fff;
+        background-color: var(--cor-primaria);
+        transform: scale(1.05);
+    }
+
+    .days .day.today {
+        color: #fff;
+        background-color: var(--cor-primaria);
+    }
+
+    .days .day.next,
+    .days .day.prev {
+        color: #ccc;
+    }
+
+    .clickday {
+        color: #ccc;
+        padding: 10% 40% 20% 40%;
+    }
+
+
+    .days .day {
+        cursor: pointer;
+    }
+
+    .days .day.selected {
+        background-color: red;
+        color: white;
+    }
+
+    .addTarefas {
+        display: none;
+    }
+
+    .fixed-text {
+        padding: 5px;
+        /* Diminuído de 10px */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        /* Diminuído de 10px */
+        background-color: #f9f9f9;
+        font-size: 14px;
+        /* Adicionado para diminuir o tamanho do texto */
+    }
+
+    .contemTarefa {
+        display: flex;
+        color: var(--text-color);
+        background-color: var(--cor-primaria);
+        transition: all 0.5s;
+        width: 100%;
+        /* Ocupa toda a largura na tela */
+        margin: 10px 0;
+        /* Espaçamento entre o calendário e a área de tarefas */
+        height: auto;
+        border-radius: 10px;
+        padding: 3%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        /* Alinha os elementos verticalmente */
+        align-items: center;
+        margin: 2% 2% 2% 1.5%;
+
+    }
+
+
+    .contemTarefa .Titulo {
+        align-items: center;
+        transition: all 0.5s;
+        font-size: 16px;
+        /* Diminuído de 20px */
+        font-weight: 550;
+        color: var(--text-color);
+        border-bottom: 2px solid #ccc;
+        width: 100%;
+        text-align: center;
+        margin: 3% 3% 3% 10;
+        padding: 0% 1% 2% 1%;
+    }
+
+    .contemTarefa .card {
+
+        background-color: var(--cor-primaria);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        align-items: center;
+        animation: alternate;
+        margin: 1%;
+        font-size: 14px;
+        /* Diminuído de 20px */
+        padding: 0% 0% 0% 0%;
+
+
+    }
+
+    .contemTarefa .card-title {
+
+        align-items: center;
+        transition: all 0.5s;
+        font-size: 16px;
+        /* Diminuído de 20px */
+        color: var(--text-color);
+        width: 100%;
+        text-align: center;
+        padding: 0% 0% 1% 0%;
+
+    }
+
+    /* Adicionador de Tarefas */
+    .addTarefas {
+        width: 100%;
+        display: none;
+        color: var(--text-color);
+        background-color: var(--cor-primaria);
+        transition: all 0.5s;
+        width: 100%;
+        margin: 2% 2% 2% 1.5%;
+        height: 435px;
+        border-radius: 10px;
+        padding: 4%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+    }
+
+    .addTarefas p {
+        transition: all 0.5s;
+        font-size: 16px;
+        /* Diminuído de 20px */
+        font-weight: 550;
+        color: var(--text-color);
+        border-bottom: 2px solid #ccc;
+        width: 100%;
+        text-align: center;
+        margin: 3%;
+        padding: 0% 0% 4% 0%;
+    }
+
+    .addTarefas .Titulo {
+        transition: all 0.5s;
+        display: block;
+        margin-bottom: 4%;
+        margin: 0% 0% 2% 0%;
+    }
+
+    .addTarefas #Botao-gravar {
+        margin: 1%;
+    }
+
+    .addTarefas #Botao-limpar {
+        margin: 1%;
+    }
+
+    .addTarefas .mb-3 {
+        font-size: 90%;
+        /* Diminuído de 100% */
+    }
+
+
+    /* --------------------- Fim Agenda --------------------- */
+    /*---------------------   Arquivo   ---------------------*/
+
+    div#arquivo {
+        position: relative;
+        width: 33%;
+        height: 30rem;
+        border-radius: 10px;
+        background-color: var(--cor-primaria);
+        transition: width 2s;
+        margin:1%;
+    }
+
+    div#arquivo>button#btnArquivo {
+        background-color: var(--cor-primaria);
+        border: none;
+        position: absolute;
+        top: 50%;
+        transition: left 2s;
+        left: 95%;
+    }
+
+    span#deleteFile{
+        background-color: var(--cor-primaria);
+        border: none;
+        transition: left 2s;
+        display: flex;
+        float:right;
+        color:black;
+        margin-right: 10%;
+
+    }
+    a.download{
+        background-color: var(--cor-primaria);
+        padding: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        color:#000
+    }
+    a.download:hover{
+        cursor: pointer;
+        color:var(--cor-secundaria)
+    }
+    span#deleteFile:hover{
+        color: darkred;
+        cursor:pointer;
+    }
+
+    span.tituloArquivo{
+        width: 50%;
+    }
+
+
+    #addfile {
+        margin-left: 2%;
+        width: 33%;
+        height: 5%;
+        position: absolute;
+        left: 0%;
+        top: 1.2%;
+    }
+
+    #adicionarFile {
+        max-height: 40%;
+        background-color: var(--cor-primaria);
+        margin-top: 2px;
+        cursor: pointer;
+        color: var(--cor-secundaria);
+    }
+
+    #fileAdd {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    #followBtn {
+        height: 60%;
+        display: none;
+        float: right;
+
+    }
+
+    div.folder {
+        padding: 2%;
+        margin-bottom: 5%;
+        padding-left: 4%;
+    }
+
+    /* --------------------- Fim Arquivo ---------------------*/
+
+
+
+
+
+    /* Responsividade */
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+
+        /* --------------------- Cadastro de Projeto --------------------- */
+        /* Preview Card */
+        img#foto-preview {
+            max-width: 100%;
+            max-height: 80%;
+        }
+
+        div#preview-card {
+            min-height: 35rem;
+        }
+
+        div.dados-preview {
+            float: left;
+            width: 100%;
+            padding: 8%;
+        }
+
+        /* Parte dos seletores */
+        div.seletor {
+            margin-top: 1%;
+            display: block;
+            width: 100%;
+        }
+
+        button#btn-criar {
+            width: 80%;
+        }
+
+        form.formulario>#project-resume {
+            width: 90%;
+            border-radius: 10px;
+            min-height: 200px;
+        }
+
+        /* --------------------- Fim cadastro de projeto --------------------- */
+
+        /* --------------------- Agenda --------------------- */
+
+        .contemTarefa {
+            width: 100%;
+            /* Ocupa toda a largura na tela */
+            margin-bottom: 10px;
+            /* Espaçamento entre o calendário e as tarefas */
+        }
+
+        .addTarefas {
+            width: 100%;
+            /* Ocupa toda a largura na tela */
+            margin-top: 10px;
+            /* Espaçamento entre as tarefas e o calendário */
+        }
+
+        .addTarefas .p {
+
+            padding: 20%;
+        }
+
+        .calendar {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .plataformas {
+        display: flex;
+        color: var(--text-color);
+        background-color: var(--cor-primaria);
+        transition: all 0.5s;
+        width: 100%;
+        /* Ocupa toda a largura na tela */
+        margin: 10px 0;
+        /* Espaçamento entre o calendário e a área de tarefas */
+        height: auto;
+        border-radius: 10px;
+        padding: 3%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        /* Alinha os elementos verticalmente */
+        align-items: center;
+    }
+
+
+    .plataformas .Titulo {
+        align-items: center;
+        transition: all 0.5s;
+        font-size: 16px;
+        /* Diminuído de 20px */
+        font-weight: 550;
+        color: var(--text-color);
+        border-bottom: 2px solid #ccc;
+        width: 100%;
+        text-align: center;
+        margin: 3% 3% 3% 10;
+        padding: 0% 1% 2% 1%;
+    }
+
+
+
+    .IncluirPlataformas {
+        width: 100%;
+        display: none;
+        color: var(--text-color);
+        background-color: var(--cor-primaria);
+        transition: all 0.5s;
+        width: 100%;
+        margin: 2% 2% 2% 1.5%;
+        border-radius: 10px;
+        padding: 4%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+    }
+
+    .IncluirPlataformas p {
+        transition: all 0.5s;
+        font-size: 16px;
+        /* Diminuído de 20px */
+        font-weight: 550;
+        color: var(--text-color);
+        border-bottom: 2px solid #ccc;
+        width: 100%;
+        text-align: center;
+        margin: 3%;
+        padding: 0% 0% 2% 0%;
+    }
+
+    .IncluirPlataformas .Titulo {
+        transition: all 0.5s;
+        display: block;
+        margin-bottom: 4%;
+        margin: 0% 0% 2% 0%;
+    }
+
+
+    .plataformas .ContemPlataformas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+
+
+    }
+
+    .plataformas .ContemPlataformas div {
+
+        width: 9rem;
+        margin: 1% 1% 1% 1%;
+        padding: 1% 1% 1% 7%;
+        border-radius: 8%;
+
+    }
+
+
+    .plataformas .ContemPlataformas img {
+
+        border-radius: 8%;
+
+    }
+
+    .plataformas .ContemPlataformas .card {
+
+        border: 1px solid black;
+        border-radius: 8%;
+
+
+    }
+
+
+    .plataformas .ContemPlataformas ul {
+
+        border-radius: 10%;
+
+
+    }
+
+    .plataformas .ContemPlataformas ul li {
+
+        border-radius: 20%;
+        height: max-content;
+
+    }
+
+
+
+
+    .plataformas .ContemPlataformas a {
+
+        text-decoration: none;
+        text-align: center;
+
+    }
+
+    /* btns */
+    .IncluirPlataformas #Botao-Incluir {
+        margin: 0% 1% 0% 2%;
+    }
+
+    .IncluirPlataformas #Botao-Incluir:active {
+        padding: 1% 1% 1% 1%;
+    }
+
+
+
+    .plataformas #Botao-AbaPlataforma {
+        margin: 3% 0% 3% 0%;
+    }
+
+    .plataformas #Botao-AbaPlataforma:active {
+        padding: 1% 1% 1% 1%;
+    }
+
+
+    .IncluirPlataformas #Botao-limparPlataformas {
+        margin: 2% 1% 0% 2%;
+    }
+
+    .IncluirPlataformas #Botao-limparPlataformas:active {
+        padding: 1% 1% 1% 1%;
+    }
+
+    /* END btns  */
+
+
+
+    .IncluirPlataformas .entrada {
+        margin: 0% 0% 3% 0%;
+    }
+
+    .IncluirPlataformas label {
+        margin: 2% 2% 1% 1%;
+    }
+
+    /* --------------------- Fim Agenda --------------------- */
+
+
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* --------------------- Cadastro de projeto --------------------- */
+        /* Preview Card */
+        div#foto-div {
+            width: 155px;
+            height: 155px;
+        }
+
+        img#foto-preview {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        div#preview-card {
+            min-height: 24.5rem;
+        }
+
+        /* --------------------- Fim cadastro de projeto --------------------- */
+    }
