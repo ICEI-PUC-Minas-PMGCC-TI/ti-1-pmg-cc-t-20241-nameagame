@@ -2,8 +2,15 @@
   margin: 0;
   padding: 0;
 }
-nav{
+
+nav {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background-color: #de4e14;
+  height: 10vh;
 }
 
 .NavBar img {
@@ -30,7 +37,6 @@ nav{
 .NavBar a:hover {
   opacity: 0.7;
   text-shadow: 10px 10px 10px rgb(255, 255, 255);
-
 }
 
 .NavBar .logo {
@@ -39,18 +45,10 @@ nav{
   letter-spacing: 4px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background-color: #de4e14;
-  height: 10vh;
-}
-
 .nav-list {
   list-style: none;
   display: flex;
+  align-items: center; /* Centraliza os itens da lista verticalmente */
 }
 
 .nav-list li {
@@ -82,17 +80,17 @@ nav {
     right: 0;
     width: 30vw;
     height: 92vh;
-    background: #23232e;
+    background: #de4e14;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
   }
 
   .nav-list li {
     opacity: 0;
-    margin: 15px 0; /* Adiciona espaço vertical entre os itens */
+    margin: 15px 40px; /* Adiciona espaço vertical entre os itens */
   }
 
   .mobile-menu {
