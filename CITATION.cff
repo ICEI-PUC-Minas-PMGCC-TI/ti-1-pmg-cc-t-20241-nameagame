@@ -1,30 +1,24 @@
-cff-version: 1.2.0
+cff-version: 1.2.1
 message: "If you use this software, please cite as below."
 authors:
-  - family-names: Stambassi
+  - family-names: Stambassi Duarte
     given-names: Augusto
-  - family-names: Candido
+  - family-names: Cândido de Almeida
     given-names: Davi
-  - family-names: Anderson
+  - family-names: Anderson Carvalho da Silva
     given-names: Gabriel
-  - family-names: Van 
-    given-names: Alexandre
-  - family-names: dos Reis
-    given-names: João Vitor
-  - family-names: Patrício 
-    given-names: Fabiano vitor
-  - family-names: Guimarães 
-    given-names: Igor Gabriel  
+  - family-names: Duarte Van de Graaf 
+    given-names: Alexandre 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Nepomuceno Curto
+    given-names: Hayala 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Alberto Marques Pietrobon
+    given-names: Carlos 
 title: "Daigaku Connect"
 version: 1.0.0
 license: GNU GPL 3.0
-date-released: 2024-04-14
-url: "https://github.com/ICEI-PUC-Minas-PMGCC-TI/daigaku-connect"
+date-released: 2024-06-30
+url: "https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-nameagame"
