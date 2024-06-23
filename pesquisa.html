@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pesquisa</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .search-box {
+            width: 300px;
+            border: 2px solid #ddd;
+            border-radius: 25px;
+            padding: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus {
+            border-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+        .search-button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #f15025;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+        }
+
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 3rem auto;
+            gap: 20px;
+        }
+
+        .container img {
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+
+        .grid-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f15025;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .grid-content.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="search-container">
+    <input type="text" class="search-box" id="searchInput" placeholder="Encontrar...">
+    <button class="search-button" onclick="search()">Search</button>
+</div>
+
+<div class="container" id="resultsContainer">
+    <!-- Os resultados da pesquisa serão adicionados aqui -->
+</div>
+
+<script>
+    const dataURL = 'https://replit.com/@davicandidopucm/Daigaku-Connectjson#db.json';
+
+    async function fetchData() {
+        try {
+            const response = await fetch(dataURL);
+            const data = await response.json();
+            return data.Trabalho;
+        } catch (error) {
+            console.error('Erro ao buscar os dados:', error);
+            return [];
+        }
+    }
+
+    async function search() {
+        const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        const resultsContainer = document.getElementById('resultsContainer');
+        resultsContainer.innerHTML = '';  // Limpa os resultados anteriores
+
+        const data = await fetchData();
+
+        data.forEach(item => {
+            const title = item.title.toLowerCase();
+            if (title.includes(searchInput)) {
+                const gridContent = document.createElement('div');
+                gridContent.className = 'grid-content';
+                gridContent.innerHTML = `
+                    <img src="computer-svgrepo-com.svg">
+                    <h1>${item.title}</h1>
+                    <p>${item.description}</p>
+                `;
+                resultsContainer.appendChild(gridContent);
+            }
+        });
+    }
+
+    // Exibir todos os resultados iniciais ao carregar a página
+    window.onload = async () => {
+        const data = await fetchData();
+        const resultsContainer = document.getElementById('resultsContainer');
+        data.forEach(item => {
+            const gridContent = document.createElement('div');
+            gridContent.className = 'grid-content';
+            gridContent.innerHTML = `
+                <img src="computer-svgrepo-com.svg">
+                <h1>${item.title}</h1>
+                <p>${item.description}</p>
+            `;
+            resultsContainer.appendChild(gridContent);
+        });
+    }
+</script>
+
+</body>
+</html>
