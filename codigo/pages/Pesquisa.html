@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pesquisa</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Home Bar - Barra de Navegação-->
+    <div class="NavBar">
+        <header>
+            <nav>
+                <a class="imgLogo" href="/index.html"><img
+                        src="/assets/images/logo.png"
+                        alt="Logo"></a>
+                <a class="logo" href="/">Daigaku Connect</a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/index.html">Inicio</a></li> <!-- Colocar links -->
+                    <li><a href="/pages/perfil.html">Perfil</a></li> <!-- Colocar links -->
+                    <li><a href="/pages/ProjetoPage.html">Meus Grupos</a></li> <!-- Colocar links -->
+                    <li><a href="/pages/cadastroProjeto.html">Novo Grupo</a></li> <!-- Colocar links -->
+
+                    <li><a href="/"><img class="imgUsuario"
+                                src="/assets/images/logo.png"
+                                alt="Logo"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <script src="/assets/js/navbar.js"></script>
+    </div>
+
+<div class="search-container">
+    <input type="text" class="search-box" id="searchInput" placeholder="Encontrar..." onchange="search()">
+    <button class="search-button" onclick="search()">Search</button>
+</div>
+
+<div class="resultsContainer" id="resultsContainer">
+    <!-- Os resultados da pesquisa serão adicionados aqui -->
+</div>
+
+<!------------------ Rodapé ------------------>
+
+<footer class="rodape" id="contato">
+    <div class="rodape-div">
+
+        <div class="rodape-div-1">
+            <div class="rodape-div-1-coluna">
+                <!-- elemento -->
+                <span><b>LOGO</b></span>
+                <a class="imgLogo" href="/"><img
+                        src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMGCC-TI/daigaku-connect/main/source/logo.png"
+                        alt="Logo"></a>
+            </div>
+        </div>
+
+        <div class="rodape-div-2">
+            <div class="rodape-div-2-coluna">
+                <!-- elemento -->
+                <span><b>Contatos</b></span>
+                <div class="RodapeContatos">
+                    <p>Augusto@gmail.com</p>
+                    <p>+55 31 8358-7064</p>
+                    <p>davicandidopucminas@gmail.com</p>
+                    <p>+55 31 97306-7259</p>
+                    <p>xande.dvdg@gmail.com</p>
+                    <p>+55 31 984895313</p>
+                    <p>Gabriel1234000000@gmail.com</p>
+                    <p>+55 31 8873-4280</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape-div-3">
+            <div class="rodape-div-3-coluna">
+                <!-- elemento -->
+                <span class="links"><b>Links</b></span>
+                <p><a href="#"><br>Home</a></p> <!-- Colocar links -->
+                <p><a href="#">Login</a></p> <!-- Colocar links -->
+                <p><a href="#">Perfil</a></p> <!-- Colocar links -->
+                <p><a href="#">Meus Grupos</a></p> <!-- Colocar links -->
+                <p><a href="#">Novo Grupo</a></p> <!-- Colocar links -->
+            </div>
+        </div>
+
+        <div class="rodape-div-4">
+            <div class="rodape-div-4-coluna">
+                <!-- elemento -->
+                <span><b>Quem somos:</b></span>
+                <p><br>Somos um projeto que tem como objetivo fornecer <br>comunicação gratuita, segura e eficiente
+                    para o gerenciamento de projetos dentro do ambiente universitário.</p>
+            </div>
+        </div>
+
+    </div>
+    <p class="rodape-direitos">Copyright © 2023 – Todos os Direitos Reservados.</p>
+</footer>
+
+</body>
+<script src="/assets/js/Pesquisa.js"></script>
+</html>
