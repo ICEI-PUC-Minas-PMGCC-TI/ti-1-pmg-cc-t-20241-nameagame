@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Criamos o objeto `novaTarefa`
     // Adicionamar uma propriedade dinâmica ao objeto `novaTarefa` // A fazer
+    
     let novaTarefa = { // .push() // A fazer
         id: dia,  
         dia: dia,
