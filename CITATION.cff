@@ -1,5 +1,6 @@
 cff-version: 1.2.1
 message: "If you use this software, please cite as below."
+title: "Daigaku Connect"
 authors:
   - family-names: Stambassi Duarte
     given-names: Augusto
@@ -17,7 +18,10 @@ authors:
     affiliation: PUC Minas
     family-names: Alberto Marques Pietrobon
     given-names: Carlos 
-title: "Daigaku Connect"
+keywords:
+  - Universidade
+  - Grupos
+  - Trabalhos
 version: 1.0.0
 license: GNU GPL 3.0
 date-released: 2024-06-30
