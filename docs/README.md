@@ -90,11 +90,11 @@ Os requisitos de um projeto são classificados em dois grupos:
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
 ## Wireframes
-<img src="/docs/assets/images/userflow.jfif">
+<img src="/docs/assets/images/Figma.png">
 
 
 ## Gestão de Projetos
 
 <img src="/docs/assets/images/kanban.png">
 
-Nosso grupo baseou a divisão de tarefas pelo metódo Kanban, infelizmente sobrecarregou dois memebros do times, enquanto o resto fez um pouco ou quase nada.
+Nosso grupo baseou a divisão de tarefas pelo metódo Kanban, onde o acompanhamento de entregas bem como o seu desenvolvimento desenvolvimento pode ser acompanhado
