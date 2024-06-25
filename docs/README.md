@@ -39,8 +39,8 @@ Buscando entendermos melhor o nosso público-alvo, realizou-se uma pesquisa por 
 
 
 ## Personas
-<img src="/docs/assets/images/Persona 1">
-<img src="/docs/assets/images/Persona 2">
+<img src="/docs/assets/images/Persona1">
+<img src="/docs/assets/images/Persona2">
 
 
 **Links Úteis**:
