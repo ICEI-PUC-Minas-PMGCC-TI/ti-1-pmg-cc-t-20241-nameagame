@@ -20,21 +20,21 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
-O problema encontrado pela nossa equipe foram primáriamente dois: A dificuldade de se achar o jogo ideal a ser jogado e o tempo que é gasto para acha-lo. Tal problema é voltado ao consumidor de jogos eletrônicos, abrangindo um diverso grupo de pessoas, e ,portanto, a aplicação será no uso doméstico do site.
+O problema em questão envolve a dificuldade de formações de grupos para o desenvolvimento de trabalhos universitarios, sejá em sua montagem ou na busca de integrantes para os desenvolve-los.
 
 ## Objetivos
 
-O objetivo do projeto é criar um software capaz de apresentar um jogo ideal para a pessoa de maneira rápida e eficiente, de acordo com as vontades do momento e suas preferências pré estabelecidas.
-Além disso, parte como objetivo específico do projeto auxiliar os consumidores a acharem o melhor preço dos jogos ideias, como também mostrar outras opções baseadas em estúdios de jogos e gêneros prediletos.
+O objetivo deste projeto é desenvolver uma plataforma capaz de facilitar a busca de grupos ou de integrantes para seus grupo, como também facilitar o seu proprio gerenciamento em sí
 
 
 ## Justificativa
 
-O tema do projeto foi escolhido por ser algo que a maioria do grupo vivência e, por isso, temos a noção do quanto este projeto poderia impactar positivamente a comunidade dos jogadores, de sua forma mais diversa, seja ampliando a quantidade daquels que jogam, ou seja fazendo as pessoas encontrarem um novo jogo favorito, sendo benéfico para todos, desde quem joga até quem produz.
+A busca por projetos ou até mesmo de integrantes interresados e qualificados para o desenvolvimeto de projetos, sempre foi um problema no meio academico. Portanto o tema do projeto escolhido se baseou em uma questão no qual a maioria do grupo vivência e, por isso, acreditamos que este projeto poderia impactar positivamente o meio universitaria, facilitando a busca e o desenvolvimento de projetos de interresses dos alunos das mais diversas universidades.
 
 ## Público-Alvo
 
-Como dito anteriormente, o projeto tem como alvo os _gamers_, público alvo hoje que se torna bem abrangente. Por isso, realizamos uma pesquisa por meio de um formulário para garantir um número maior e distinto de pessoas, e assim entendermos melhor o público-alvo. Formamos então um grupo seleto de personas, como pode se ver abaixo:
+Como dito anteriormente, o projeto tem como alvo o meio academico em geral, sejam aqueles que buscam projetos para se integrar ou até mesmo aqueles que necessitam encontrar novos integrantes para seus projetos.
+Buscando entendermos melhor o nosso público-alvo, realizou-se uma pesquisa por meio de um formulário para garantir um número maior e distinto de opiniões sobre o projeto, e assim . Formamos então um grupo seleto de personas, como pode se ver abaixo:
 <br>
 <img src="/docs/assets/images/persona1.png">
 <img src="/docs/assets/images/persona2.png">
