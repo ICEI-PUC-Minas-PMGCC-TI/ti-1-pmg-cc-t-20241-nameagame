@@ -36,14 +36,11 @@ A busca por projetos ou até mesmo de integrantes interresados e qualificados pa
 Como dito anteriormente, o projeto tem como alvo pessoal do meio academico em geral, sejam aqueles que buscam projetos para se integrar ou até mesmo aqueles que necessitam encontrar novos integrantes para seus proprios projetos.
 Buscando entendermos melhor o nosso público-alvo, realizou-se uma pesquisa por meio de um formulário para garantir um número maior e distinto de opiniões sobre o tema. A partir desta pesquisa desenvolveou-se personas que representassem nosso publico alvo:
 <br>
-<img src="/docs/assets/images/PMGCC-T - G2 - Persona 1">
-<img src="/docs/assets/images/PMGCC-T - G2 - Persona 2">
+
 
 ## Personas
-
-<img src="/docs/assets/images/Joaozinho.png"> 
-<img src="/docs/assets/images/Mariazinha.png">
-<img src="/docs/assets/images/Marcos.png">
+<img src="/docs/assets/images/PMGCC-T - G2 - Persona 1">
+<img src="/docs/assets/images/PMGCC-T - G2 - Persona 2">
 
 
 **Links Úteis**:
