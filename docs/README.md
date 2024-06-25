@@ -43,53 +43,45 @@ Buscando entendermos melhor o nosso público-alvo, realizou-se uma pesquisa por 
 <img src="/docs/assets/images/Persona2.jpg">
 
 
-**Links Úteis**:
-
-- [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-- [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-- [Rock Content](https://rockcontent.com/blog/personas/)
-- [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-
 ## Histórias de Usuários
 
-Mariana, a Estudante Proativa
+<strong>Mariana, a Estudante Proativa</strong>
 
-Problema: Mariana é uma estudante de Engenharia que adora projetos desafiadores e está ansiosa para desenvolver seu portfólio. Ela tem uma ideia incrível para um projeto de pesquisa, mas não conhece ninguém na sua turma com o mesmo interesse e não sabe como encontrar outros estudantes para trabalhar com ela.<br>
-Objetivo: Mariana quer encontrar outros estudantes com interesses semelhantes para formar um grupo e desenvolver seu projeto de pesquisa. Ela busca uma plataforma fácil de usar, onde possa publicar sua ideia e encontrar pessoas qualificadas para se juntar ao seu grupo.<br>
-História: "Eu estava super animada com a minha ideia de projeto de pesquisa sobre inteligência artificial, mas não conhecia ninguém na minha turma com o mesmo interesse. Passei dias procurando em grupos do Facebook e em fóruns online, mas não encontrava nada. Até que descobri essa plataforma incrível! Pude publicar minha ideia e, em poucos dias, vários estudantes interessados me contactaram. Foi fácil formar um grupo com pessoas talentosas e motivadas. Agora, estamos trabalhando juntos em um projeto incrível, e estou aprendendo muito!"
+<strong>Problema:</strong> Mariana é uma estudante de Engenharia que adora projetos desafiadores e está ansiosa para desenvolver seu portfólio. Ela tem uma ideia incrível para um projeto de pesquisa, mas não conhece ninguém na sua turma com o mesmo interesse e não sabe como encontrar outros estudantes para trabalhar com ela.<br>
+<strong>Objetivo:</strong> Mariana quer encontrar outros estudantes com interesses semelhantes para formar um grupo e desenvolver seu projeto de pesquisa. Ela busca uma plataforma fácil de usar, onde possa publicar sua ideia e encontrar pessoas qualificadas para se juntar ao seu grupo.<br>
+<strong>História:</strong> "Eu estava super animada com a minha ideia de projeto de pesquisa sobre inteligência artificial, mas não conhecia ninguém na minha turma com o mesmo interesse. Passei dias procurando em grupos do Facebook e em fóruns online, mas não encontrava nada. Até que descobri essa plataforma incrível! Pude publicar minha ideia e, em poucos dias, vários estudantes interessados me contactaram. Foi fácil formar um grupo com pessoas talentosas e motivadas. Agora, estamos trabalhando juntos em um projeto incrível, e estou aprendendo muito!"
 
-João, o Estudante Indeciso
+<strong>João, o Estudante Indeciso</strong>
 
-Problema: João é um estudante de Administração que está em seu último ano da faculdade e precisa de um projeto para se formar. Ele não tem uma ideia específica e sente dificuldade em escolher um tema que lhe interesse e que seja desafiador.<br>
-Objetivo: João busca uma plataforma que o ajude a encontrar ideias de projetos interessantes, avaliar a viabilidade de cada tema, e identificar grupos já formados com os quais ele possa se juntar.<br>
-História: "Estava perdido, sem saber por onde começar meu projeto de conclusão de curso. A ideia de ter que pensar em um tema e encontrar pessoas para trabalhar comigo me deixava ansioso. Aí encontrei essa plataforma e me surpreendi! Pude navegar por diversos projetos, ler as descrições e finalmente, achei um projeto que me interessava e me encaixava. Foi muito mais fácil do que eu imaginava!"
+<strong>Problema:</strong> João é um estudante de Administração que está em seu último ano da faculdade e precisa de um projeto para se formar. Ele não tem uma ideia específica e sente dificuldade em escolher um tema que lhe interesse e que seja desafiador.<br>
+<strong>Objetivo:</strong> João busca uma plataforma que o ajude a encontrar ideias de projetos interessantes, avaliar a viabilidade de cada tema, e identificar grupos já formados com os quais ele possa se juntar.<br>
+<strong>História:</strong> "Estava perdido, sem saber por onde começar meu projeto de conclusão de curso. A ideia de ter que pensar em um tema e encontrar pessoas para trabalhar comigo me deixava ansioso. Aí encontrei essa plataforma e me surpreendi! Pude navegar por diversos projetos, ler as descrições e finalmente, achei um projeto que me interessava e me encaixava. Foi muito mais fácil do que eu imaginava!"
 
-Rafael, o Líder de Grupo
+<strong>Rafael, o Líder de Grupo</strong>
 
-Problema: Rafael é um estudante de Direito que lidera um grupo de estudos para a disciplina de Processo Penal. Ele precisa de mais membros para o grupo, mas tem dificuldade em encontrar pessoas que se encaixem na dinâmica do grupo e que tenham o mesmo nível de comprometimento.<br>
-Objetivo: Rafael quer uma plataforma onde ele possa divulgar as vagas do seu grupo de estudos e encontrar novos membros com perfil adequado, facilitando o gerenciamento do grupo e a comunicação entre os participantes.<br>
-História: "Eu estava com dificuldades para encontrar mais pessoas para o meu grupo de estudos. Tínhamos um bom ritmo, mas precisávamos de mais gente. A plataforma foi a solução! Publiquei uma vaga com as informações do nosso grupo e os requisitos para participar. Recebi vários pedidos de entrada e, em poucos dias, conseguimos completar o grupo com pessoas engajadas e dispostas a aprender. A plataforma me ajudou a organizar o grupo e a manter a comunicação fluida entre todos. "
+<strong>Problema:</strong> Rafael é um estudante de Direito que lidera um grupo de estudos para a disciplina de Processo Penal. Ele precisa de mais membros para o grupo, mas tem dificuldade em encontrar pessoas que se encaixem na dinâmica do grupo e que tenham o mesmo nível de comprometimento.<br>
+<strong>Objetivo:</strong> Rafael quer uma plataforma onde ele possa divulgar as vagas do seu grupo de estudos e encontrar novos membros com perfil adequado, facilitando o gerenciamento do grupo e a comunicação entre os participantes.<br>
+<strong>História:</strong> "Eu estava com dificuldades para encontrar mais pessoas para o meu grupo de estudos. Tínhamos um bom ritmo, mas precisávamos de mais gente. A plataforma foi a solução! Publiquei uma vaga com as informações do nosso grupo e os requisitos para participar. Recebi vários pedidos de entrada e, em poucos dias, conseguimos completar o grupo com pessoas engajadas e dispostas a aprender. A plataforma me ajudou a organizar o grupo e a manter a comunicação fluida entre todos. "
 
 ## Requisitos
 
 Os requisitos de um projeto são classificados em dois grupos:
 
 - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-  * O Sistema requer um cadastro de usuário
-  * O Sistema requer um cadastro para o desenvolvedor de jogos e o upload do seu jogo produzido
-  * O Sistema vai necessitar de uma API das lojas de jogos
-  * O Sistema tem que conter um Quiz que seja variável
-  * O Sistema tem que conter um algoritmo que produza uma resposta baseada em medidas e parâmetros do Quiz
-  * Os usuários devem poder realizar buscas avançadas por jogos, filtrando por gênero, plataforma, faixa etária, preço e outras características relevantes.  
-  * Os usuários podem avaliar os jogos e deixarem comentários, fornecendo feedback útil para outros usuários e contribuindo para a qualidade das recomendações na plataforma.
+  * O Sistema requer um cadastro de usuários/empresas
+  * O Sistema requer um cadastro de projetos/grupos
+  * O Sistema vai necessitar de sistema de busca de projetos
+  * O Sistema tem que conter um meio de integrar novos integrantes aos grupos
+  * O Sistema tem que conter um meio de compartilhamento de Documentos/arquivos
+  * O Sistema tem que conter uma agenda/calendário de entregas e pendências
+  * O Sistema deve conter um meio de integração com Ferramentas de Produtividade(Google Drive, Microsoft Office, Figma,  etc)
+  * O Sistema deve disponibilizar os projetos criados visiveis ao demais usuarios  
 
-Integração com Plataformas de Jogos: Integração com plataformas de distribuição de jogos, como Steam, Epic Games Store, PlayStation Store, Xbox Store, entre outras, para fornecer uma ampla variedade de opções de compra e download diretamente pela plataforma de busca. - Baixa 
 - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
   * O Sistema será Web, então tem que ser acessível e adaptável a qualquer dispositivo
-  * Os Usuários tem que ceder dados para usabilidade
-  * Os Usuários tem que estar dispostos a realizar um quiz
-  * O Sistema será produzido em HTML e CSS
+  * Os Usuários tem que  estar dispostos a ceder dados para usabilidade
   * O Sitema deve informar quais dados serão utilizados
+  * O Sistema será produzido em HTML, CSS e JS
 
 
 ## User Flow
