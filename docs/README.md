@@ -51,12 +51,24 @@ Buscando entendermos melhor o nosso público-alvo, realizou-se uma pesquisa por 
 - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
 
 ## Histórias de Usuários
-* Como um professor, eu quero poder utilizar essa ferramenta para melhorar minha metodologia de ensino fazendo a relação de jogo-educação.
-* Como um psicólogo, eu quero indicar para meus pacientes jogos casuais para melhorar a saúde mental
-* Como um responsável, quero arranjar uma maneira para me envolver com os meus filhos
-* Como um jogador profissional, eu quero poder otimizar meu acervo de jogos para poder me tornar cada vez melhor
-* Como um streamer, eu quero aumentar a variedade de jogos para fornecer um maior entretenimento e variedade para o meu público
-* Como um estudante, eu quero poder escolher com cuidado um jogo de simulação, para poder melhorar meu raciocínio lógico.
+
+Mariana, a Estudante Proativa
+
+Problema: Mariana é uma estudante de Engenharia que adora projetos desafiadores e está ansiosa para desenvolver seu portfólio. Ela tem uma ideia incrível para um projeto de pesquisa, mas não conhece ninguém na sua turma com o mesmo interesse e não sabe como encontrar outros estudantes para trabalhar com ela.
+Objetivo: Mariana quer encontrar outros estudantes com interesses semelhantes para formar um grupo e desenvolver seu projeto de pesquisa. Ela busca uma plataforma fácil de usar, onde possa publicar sua ideia e encontrar pessoas qualificadas para se juntar ao seu grupo.
+História: "Eu estava super animada com a minha ideia de projeto de pesquisa sobre inteligência artificial, mas não conhecia ninguém na minha turma com o mesmo interesse. Passei dias procurando em grupos do Facebook e em fóruns online, mas não encontrava nada. Até que descobri essa plataforma incrível! Pude publicar minha ideia e, em poucos dias, vários estudantes interessados me contactaram. Foi fácil formar um grupo com pessoas talentosas e motivadas. Agora, estamos trabalhando juntos em um projeto incrível, e estou aprendendo muito!"
+
+João, o Estudante Indeciso
+
+Problema: João é um estudante de Administração que está em seu último ano da faculdade e precisa de um projeto para se formar. Ele não tem uma ideia específica e sente dificuldade em escolher um tema que lhe interesse e que seja desafiador.
+Objetivo: João busca uma plataforma que o ajude a encontrar ideias de projetos interessantes, avaliar a viabilidade de cada tema, e identificar grupos já formados com os quais ele possa se juntar.
+História: "Estava perdido, sem saber por onde começar meu projeto de conclusão de curso. A ideia de ter que pensar em um tema e encontrar pessoas para trabalhar comigo me deixava ansioso. Aí encontrei essa plataforma e me surpreendi! Pude navegar por diversos projetos, ler as descrições, ver as habilidades dos membros dos grupos e, finalmente, achei um projeto que me interessava e me encaixava. Foi muito mais fácil do que eu imaginava!"
+
+Rafael, o Líder de Grupo
+
+Problema: Rafael é um estudante de Direito que lidera um grupo de estudos para a disciplina de Processo Penal. Ele precisa de mais membros para o grupo, mas tem dificuldade em encontrar pessoas que se encaixem na dinâmica do grupo e que tenham o mesmo nível de comprometimento.
+Objetivo: Rafael quer uma plataforma onde ele possa divulgar as vagas do seu grupo de estudos e encontrar novos membros com perfil adequado, facilitando o gerenciamento do grupo e a comunicação entre os participantes.
+História: "Eu estava com dificuldades para encontrar mais pessoas para o meu grupo de estudos. Tínhamos um bom ritmo, mas precisávamos de mais gente. A plataforma foi a solução! Publiquei uma vaga com as informações do nosso grupo e os requisitos para participar. Recebi vários pedidos de entrada e, em poucos dias, conseguimos completar o grupo com pessoas engajadas e dispostas a aprender. A plataforma me ajudou a organizar o grupo e a manter a comunicação fluida entre todos. "
 
 ## Requisitos
 
