@@ -33,13 +33,11 @@ A busca por projetos ou até mesmo de integrantes interresados e qualificados pa
 
 ## Público-Alvo
 
-Como dito anteriormente, o projeto tem como alvo o meio academico em geral, sejam aqueles que buscam projetos para se integrar ou até mesmo aqueles que necessitam encontrar novos integrantes para seus projetos.
-Buscando entendermos melhor o nosso público-alvo, realizou-se uma pesquisa por meio de um formulário para garantir um número maior e distinto de opiniões sobre o projeto, e assim . Formamos então um grupo seleto de personas, como pode se ver abaixo:
+Como dito anteriormente, o projeto tem como alvo pessoal do meio academico em geral, sejam aqueles que buscam projetos para se integrar ou até mesmo aqueles que necessitam encontrar novos integrantes para seus proprios projetos.
+Buscando entendermos melhor o nosso público-alvo, realizou-se uma pesquisa por meio de um formulário para garantir um número maior e distinto de opiniões sobre o tema. A partir desta pesquisa desenvolveou-se personas que representassem nosso publico alvo:
 <br>
-<img src="/docs/assets/images/persona1.png">
-<img src="/docs/assets/images/persona2.png">
-<img src="/docs/assets/images/persona3.png">
-
+<img src="/docs/assets/images/PMGCC-T - G2 - Persona 1">
+<img src="/docs/assets/images/PMGCC-T - G2 - Persona 2">
 
 ## Personas
 
