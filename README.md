@@ -8,7 +8,7 @@ Um projeto que tem como objetivo fornecer comunicação gratuita, segura e efici
 
 ## Alunos integrantes da equipe
 
-* Augusto Stambassi Duarte  
+* [Augusto Stambassi Duarte](https://github.com/Stambassi)
 * [Alexandre Van de Graaf](https://github.com/Fan77asyy)
 * [Davi Cândido de Almeida](https://github.com/DaviKandido)
 * [Gabriel Anderson](https://github.com/gonafritas)
