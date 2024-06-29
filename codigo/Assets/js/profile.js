@@ -23,10 +23,18 @@ async function exibirPerfil(profile) {
     document.getElementById('userName').textContent = profile.Nome;
     document.getElementById('userText').textContent = profile.Bio;
     document.getElementById('uni').innerHTML = `<img src="/assets/images/faculdade.png"> ${profile.Dominio}`;
-    document.getElementById('origem').innerHTML = `<img src="/assets/images/origem.png"> ${profile.Origem}`;
-    document.getElementById('idade').innerHTML = `<img src="/assets/images/idade.png"> ${profile.Idade}`;
-    document.getElementById('area').innerHTML = `<img src="/assets/images/area.png"> ${profile.Area_de_Atuacao}`;
-    document.getElementById('graduacoes').innerHTML = `<img src="/assets/images/graduacoes.png"> ${profile.Curso}`;
+    if(profile.Origem != undefined){
+        document.getElementById('origem').innerHTML = `<img src="/assets/images/origem.png"> ${profile.Origem}`;
+    }
+    if(profile.Idade != undefined){
+        document.getElementById('idade').innerHTML = `<img src="/assets/images/idade.png"> ${profile.Idade}`;
+    }
+    if(profile.Area_de_Atuacao != undefined){
+        document.getElementById('area').innerHTML = `<img src="/assets/images/area.png"> ${profile.Area_de_Atuacao}`;
+    }
+    if(profile.Curso != undefined){
+        document.getElementById('graduacoes').innerHTML = `<img src="/assets/images/graduacoes.png"> ${profile.Curso}`;
+    }
     document.getElementById('userImage').src =  profile.Foto_perfil;
 }
 

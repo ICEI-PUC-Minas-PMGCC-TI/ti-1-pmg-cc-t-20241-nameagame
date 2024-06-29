@@ -1,5 +1,8 @@
 
+
 document.addEventListener("DOMContentLoaded", () => {
+    const param = new URLSearchParams(location.search);
+    const idPage = param.get("id");
     const daysContainer = document.querySelector(".days");
     const nextBtn = document.querySelector(".next-btn");
     const prevBtn = document.querySelector(".prev-btn");

@@ -1,5 +1,8 @@
 
 const dataURL = 'https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev'
+const param = new URLSearchParams(location.search);
+const idPage = param.get("id");
+
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -37,6 +40,20 @@ async function readDataFile() {
   console.log(data)
   return (data);
 }
+
+async function LoadProjectData(id) {
+  try {
+    const response = await fetch(`${dataURL}/Trabalho/${id}`);
+    if (response.ok) {
+      const project = await response.json();
+      console.log(project);
+      document.getElementById('Project_Name').textContent = project.Nome;
+    }
+  } catch (error) {
+    console.error("Erro ao aceitar solicitação:", error);
+  }
+}
+LoadProjectData(idPage)
 
 function saveDataFile(dado) {
   fetch(`${dataURL}/Arquivos`, {
@@ -82,29 +99,35 @@ async function addFile() {
     const data = await getBase64(e.target.files[0])
     let arqNome = (item.value.split(/(\\|\/)/g).pop());
     let file = {
+      idGrupo: idPage,
       Nome: arqNome,
       Conteudo: data,
     };
     console.log(file)
-    saveDataFile(file).then(()=>{loadFile()})
+    saveDataFile(file,() => { loadFile() })
   })
 
 }
 
 
-async function loadFile() {
+async function loadFile() { 
   console.log("teste")
   var projecao = " "
   let allFiles = await readDataFile()
   console.log(allFiles.length)
   for (let i = allFiles.length - 1; i >= 0; i--) {
-    projecao = `<div id="${allFiles[i].id}">
-    <a class="mx-1 download" id="a${allFiles[i].id}" href="${allFiles[i].Conteudo}" download="${allFiles[i].Nome}" 
-    target="_blank" title="Baixar seu arquivo">
-    <i class="fa-solid fa-download"></i></a> 
-    <span>${allFiles[i].Nome}</span>
-    <span id="deleteFile" onclick="deleteFile(${allFiles[i].id})">
-    <i class=" fa-solid fa-trash"></i></span></div>` + projecao;
+    if(allFiles[i].idGrupo === idPage){
+      console.log("teste2")
+      projecao = `
+      <div id="${allFiles[i].id}">
+        <a class="mx-1 download" id="a${allFiles[i].id}" href="${allFiles[i].Conteudo}" download="${allFiles[i].Nome}" 
+         target="_blank" title="Baixar seu arquivo">
+        <i class="fa-solid fa-download"></i></a> 
+        <span>${allFiles[i].Nome}</span>
+        <span id="deleteFile" onclick="deleteFile(${allFiles[i].id})">
+        <i class=" fa-solid fa-trash"></i></span>
+      </div>` + projecao;
+    }
     //console.log(projecao)
   }
   let mainDiv = document.getElementById("f");

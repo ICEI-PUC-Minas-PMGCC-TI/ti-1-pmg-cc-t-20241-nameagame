@@ -119,7 +119,8 @@ document.getElementById('editProfileForm').addEventListener('submit', async func
         Curso: document.getElementById('graduacoes').value,
         Telefone: document.getElementById('telefone').value,
         Email: user.Email,
-        Senha: user.Senha
+        Senha: user.Senha,
+        Grupos: user.Grupos
     };
 
     await saveProfile(IdAtual, profileData);

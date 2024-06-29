@@ -30,6 +30,7 @@ async function saveDataUsuario(dado) {
     }).then(response => response.json())
         .then(dado => {
             alert("Usuário criado com sucesso");
+            window.location.href = '/pages/login.html';
         })
         .then(console.log(dado))
 }
@@ -64,9 +65,9 @@ function criarUsu() {
                 Email: email,
                 Telefone: tele,
                 Senha: senha,
+                Grupos: null
             }
             saveDataUsuario(Usuario)
-            .then(window.location.href = '/pages/login.html');
             console.log(Usuario);
            
         }
@@ -81,7 +82,7 @@ function readDataAllUsuario(FunctionCallBack) {
     fetch(`${dataURL}/Usuario`)
         .then((res) => res.json())
         .then(data => {
-            // console.log(data)
+            console.log(data)
             FunctionCallBack(data);
             return data;
         })
@@ -120,7 +121,18 @@ function loginB(data) {
     if (y === false) {
         Erro.innerHTML = "Login inválido";
     } else {
-        (window.location.href = '/pages/perfil.html');
+        Id = sessionStorage.getItem('login') - 1 //Id nao comeca do 0, por isso tirar 1 unidade;
+        if(data[Id].Grupos === null){
+            alert(`Login Feito: ${Id} Grupos = ${data[Id].Grupos}`);
+           (window.location.href = '/pages/pesquisa.html');
+        } else if((data[Id].Grupos.length === 1)) {
+            alert(`Login Feito: ${Id} Grupos = ${data[Id].Grupos}`);
+            (window.location.href = '/pages/ProjetoPage.html');
+        } else {
+            alert(`Login Feito: ${Id} Mais de um grupo`);
+            (window.location.href = '/pages/meusGrupos.html');
+        }
+      
     }
 }
 
