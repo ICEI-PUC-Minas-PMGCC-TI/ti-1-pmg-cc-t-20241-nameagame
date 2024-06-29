@@ -28,7 +28,7 @@
 
     article#principal {
         width: 100%;
-        height:80%;
+        height: 80%;
         display: block;
         margin-left: 1%;
         background-color: var(--cor-secundaria);
@@ -36,7 +36,7 @@
 
     article#principalUsuario {
         width: 60%;
-        height:80%;
+        height: 80%;
         display: inline-block;
         margin-left: 3%;
         margin-bottom: 2%;
@@ -134,11 +134,11 @@
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
     }
-    
+
     /* ---------------------  Fim Home Page --------------------- */
 
     /* --------------------- Perfil --------------------- */
-    
+
     .profileContainer {
         max-width: 800px;
         background: #fff;
@@ -146,56 +146,56 @@
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     .profile-card {
         margin-bottom: 20px;
     }
-    
+
     .userPhoto img {
         width: 100%;
         border-radius: 8px;
     }
-    
+
     .userTopics div {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
     }
-    
+
     .userTopics img {
         width: 30px;
         margin-right: 10px;
     }
-    
+
     .userName {
         font-size: 2em;
         margin-bottom: 10px;
     }
-    
+
     .userRating {
         font-size: 1.2em;
         color: #ed5819;
     }
-    
+
     .userText {
         margin-top: 20px;
     }
-    
+
     .btn {
         display: inline-block;
         margin-right: 10px;
     }
-    
+
     .btn-primary {
         background-color: #ed5819;
         border-color: #ed5819;
     }
-    
+
     .btn-primary:hover {
         background-color: #e04e1b;
         border-color: #e04e1b;
     }
-    
+
     .profilecontainer {
         max-width: 600px;
         background: #fff;
@@ -203,30 +203,31 @@
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     h1 {
         margin-bottom: 20px;
         text-align: center;
     }
-    
+
     form .form-control {
         margin-bottom: 10px;
     }
-    
+
     form .btn {
         display: block;
         width: 100%;
     }
-    
+
     form .btn-primary {
         background-color: #ed5819;
         border-color: #ed5819;
     }
-    
+
     form .btn-primary:hover {
         background-color: #e04e1b;
         border-color: #e04e1b;
     }
+
     /* --------------------- Fim Perfil  ---------------------*/
 
     /* --------------------- Pesquisa de Projeto --------------------- */
@@ -268,7 +269,7 @@
         background-color: #0056b3;
         transform: translateY(-5px);
     }
-
+    
     .resultsContainer {
         width: 100%;
         display: grid;
@@ -296,13 +297,14 @@
     .grid-content.hidden {
         display: none;
     }
+
     /* --------------------- Fim Pesquisa de projeto --------------------- */
 
     /*--------------------- Cadastro Projeto --------------------- */
 
-     /* Preview Card */
+    /* Preview Card */
 
-     div#preview-card {
+    div#preview-card {
         display: inline-block;
         background-color: var(--cor-primaria);
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -545,6 +547,97 @@
 
     /* --------------------- Fim Login --------------------- */
 
+    /* --------------------- Tela de solicitacoes --------------------- */
+
+    /* Estilização da tabela */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    table thead {
+        background-color: var(--cor-primaria) !important;
+        /* Cor de fundo laranja para o cabeçalho da tabela */
+        font-weight: bolder !important;
+    }
+
+    table thead th {
+        color: black !important;
+        /* Alterado para uma cor legível, como preto */
+        padding: 10px !important;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody td {
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    .img-thumbnail {
+        border-radius: 50% !important;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    /* Estilização dos botões */
+    .btn-success,
+    .btn-danger {
+        border-radius: 10px;
+    }
+
+    .btn-success {
+        background-color: #28a745 !important;
+        border-color: #28a745 !important;
+        color: white !important;
+    }
+
+    .btn-danger {
+        background-color: #dc3545 !important;
+        border-color: #dc3545 !important;
+        color: white !important;
+    }
+
+    .btn-success:hover {
+        background-color: #218838 !important;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333 !important;
+    }
+
+    /* --------------------- Fim Tela de solicitacoes --------------------- */
+
+    a.btn-meusGrupos {
+        padding: 3px;
+        border: 1px outset buttonborder;
+        background-color: black;
+        color:white;
+        border-radius: 10px; 
+        text-decoration: none;
+    }
+    a.btn-meusGrupos:hover{
+        background-color:#c82333;
+    }
+
+
+    /* --------------------- Config Geral da pagina de projeto --------------------- */
+    div#configProject {
+        display: inline;
+        width: auto;
+        height: 5%;
+    }
+
+    p#Project_Name {
+        display: inline-block;
+        font-size: xx-large;
+    }
+
+    /* --------------------- FIM Config Geral da pagina de projeto  --------------------- */
     /* --------------------- Agenda --------------------- */
 
     @media (max-width: 600px) {
@@ -553,16 +646,18 @@
             max-width: 100%;
             padding: 0;
         }
-        article#main{
+
+        article#main {
             background-color: var(--cor-secundaria) !important;
         }
     }
 
     @media (min-width: 600px) {
-        article#main{
+        article#main {
             background-color: var(--cor-secundaria) !important;
             display: flex;
         }
+
         .agenda {
             padding: 1% 0 0 60%;
             background-color: var(--cor-secundaria);
@@ -570,11 +665,11 @@
         }
     }
 
-    .container {
+    .containerAgenda {
         width: 40% !important;
         min-height: 100vh;
         display: flex;
-        float:right;
+        float: right;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -844,7 +939,7 @@
         border-radius: 10px;
         background-color: var(--cor-primaria);
         transition: width 2s;
-        margin:1%;
+        margin: 1%;
     }
 
     div#arquivo>button#btnArquivo {
@@ -856,33 +951,36 @@
         left: 95%;
     }
 
-    span#deleteFile{
+    span#deleteFile {
         background-color: var(--cor-primaria);
         border: none;
         transition: left 2s;
         display: flex;
-        float:right;
-        color:black;
+        float: right;
+        color: black;
         margin-right: 10%;
 
     }
-    a.download{
+
+    a.download {
         background-color: var(--cor-primaria);
         padding: 5px;
         text-decoration: none;
         cursor: pointer;
-        color:#000
-    }
-    a.download:hover{
-        cursor: pointer;
-        color:var(--cor-secundaria)
-    }
-    span#deleteFile:hover{
-        color: darkred;
-        cursor:pointer;
+        color: #000
     }
 
-    span.tituloArquivo{
+    a.download:hover {
+        cursor: pointer;
+        color: var(--cor-secundaria)
+    }
+
+    span#deleteFile:hover {
+        color: darkred;
+        cursor: pointer;
+    }
+
+    span.tituloArquivo {
         width: 50%;
     }
 
@@ -974,27 +1072,32 @@
         /* --------------------- Fim cadastro de projeto --------------------- */
         /* --------------------- Rodapé --------------------- */
 
-        .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        .rodape-div-1,
+        .rodape-div-2,
+        .rodape-div-3,
+        .rodape-div-4 {
             width: calc(50% - 20px);
             padding: 10px;
         }
-        .rodape-div{
+
+        .rodape-div {
             padding: 60px 0px 40px 0px;
         }
-    
-        .rodape-div-1-coluna img{
+
+        .rodape-div-1-coluna img {
             margin-top: 20px;
             display: block;
             width: 100px;
             height: 100px;
         }
+
         /* --------------------- Fim Rodapé --------------------- */
         /* --------------------- Navbar --------------------- */
         body {
             overflow-x: hidden;
-          }
-        
-          .nav-list {
+        }
+
+        .nav-list {
             position: absolute;
             top: 8vh;
             right: 0;
@@ -1003,19 +1106,22 @@
             background: #de4e14;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* Centraliza os itens verticalmente */
+            justify-content: center;
+            /* Centraliza os itens verticalmente */
             transform: translateX(100%);
             transition: transform 0.3s ease-in;
-          }
-        
-          .nav-list li {
+        }
+
+        .nav-list li {
             opacity: 0;
-            margin: 15px 40px; /* Adiciona espaço vertical entre os itens */
-          }
-        
-          .mobile-menu {
+            margin: 15px 40px;
+            /* Adiciona espaço vertical entre os itens */
+        }
+
+        .mobile-menu {
             display: block;
-          }
+        }
+
         /* --------------------- Fim Navbar --------------------- */
 
         /* --------------------- Agenda --------------------- */
@@ -1043,7 +1149,7 @@
             width: 100%;
             margin-bottom: 10px;
         }
-        
+
     }
 
     .plataformas {
@@ -1222,9 +1328,9 @@
     * {
         margin: 0;
         padding: 0;
-      }
-      
-      nav {
+    }
+
+    nav {
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
         display: flex;
         justify-content: space-around;
@@ -1232,167 +1338,177 @@
         font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
         background-color: #de4e14;
         height: 10vh;
-      }
-      
-      .NavBar img {
+    }
+
+    .NavBar img {
         border-radius: 30%;
         width: 50px;
         height: 50px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-      }
-      
-      .NavBar img:hover {
+    }
+
+    .NavBar img:hover {
         border-color: black;
         opacity: 0.7;
         box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
-      }
-      
-      .NavBar .imgUsuario {
+    }
+
+    .NavBar .imgUsuario {
         border-radius: 50%;
-      }
-      
-      .NavBar a {
+    }
+
+    .NavBar a {
         color: #fff;
         text-decoration: none;
         transition: 0.3s;
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-      }
-      
-      .NavBar a:hover {
+    }
+
+    .NavBar a:hover {
         opacity: 0.7;
         text-shadow: 10px 10px 10px rgb(255, 255, 255);
-      }
-      
-      .NavBar .logo {
+    }
+
+    .NavBar .logo {
         font-size: 24px;
         text-transform: uppercase;
         letter-spacing: 4px;
-      }
-      
-      .nav-list {
+    }
+
+    .nav-list {
         list-style: none;
         display: flex;
-        align-items: center; /* Centraliza os itens da lista verticalmente */
-      }
-      
-      .nav-list li {
+        align-items: center;
+        /* Centraliza os itens da lista verticalmente */
+    }
+
+    .nav-list li {
         letter-spacing: 3px;
         margin-left: 32px;
-      }
-      
-      .mobile-menu {
+    }
+
+    .mobile-menu {
         display: none;
         cursor: pointer;
-      }
-      
-      .mobile-menu div {
+    }
+
+    .mobile-menu div {
         width: 32px;
         height: 2px;
         background: #fff;
         margin: 8px;
         transition: 0.3s;
-      }
+    }
 
-      .nav-list.active {
+    .nav-list.active {
         transform: translateX(0);
-      }
-      @keyframes navLinkFade {
+    }
+
+    @keyframes navLinkFade {
         from {
-          opacity: 0;
-          transform: translateX(50px);
+            opacity: 0;
+            transform: translateX(50px);
         }
+
         to {
-          opacity: 1;
-          transform: translateX(0);
+            opacity: 1;
+            transform: translateX(0);
         }
-      }
-      
-      .mobile-menu.active .line1 {
+    }
+
+    .mobile-menu.active .line1 {
         transform: rotate(-45deg) translate(-8px, 8px);
-      }
-      
-      .mobile-menu.active .line2 {
+    }
+
+    .mobile-menu.active .line2 {
         opacity: 0;
-      }
-      
-      .mobile-menu.active .line3 {
+    }
+
+    .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
-      }
+    }
 
     /* --------------------- Fim Navbar --------------------- */
 
     /* --------------------- Rodape ---------------------*/
-    span.links{
+    span.links {
         margin-bottom: 10%;
     }
-    
-    .rodape{
+
+    .rodape {
         background-color: #f36e20;
         color: white;
         height: auto;
         width: 100%;
         font-size: 14px;
-        font-family: helvetica; 
+        font-family: helvetica;
     }
-    .rodape a{
+
+    .rodape a {
         text-decoration: none;
         color: white;
     }
-    
-    .rodape a:hover{
+
+    .rodape a:hover {
         top: 1%;
         opacity: 0.7;
         text-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
-    
+
     }
-    
-    .rodape p{
+
+    .rodape p {
         margin-bottom: 10px;
     }
-    
-    .rodape p:hover{
+
+    .rodape p:hover {
         opacity: 0.7;
         text-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
-    
+
     }
-    
-    .rodape-div{
+
+    .rodape-div {
         display: flex;
         flex-wrap: wrap;
-        width:100%;
+        width: 100%;
         margin: auto;
         align-items: stretch;
         padding: 60px 10px 40px 10px;
     }
-    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+
+    .rodape-div-1,
+    .rodape-div-2,
+    .rodape-div-3,
+    .rodape-div-4 {
         display: flex;
         width: calc(100% / 4 - 20px);
         padding: 10px;
     }
-    .rodape span{
+
+    .rodape span {
         font-size: 20px;
         color: white;
     }
-    .rodape-direitos{
+
+    .rodape-direitos {
         width: 100%;
         background-color: black;
         padding: 10px;
         margin: 0px;
         text-align: center;
     }
-    
-    .rodape-div-1-coluna img{
+
+    .rodape-div-1-coluna img {
         margin-top: 20px;
         display: block;
         width: 200px;
         height: 200px;
     }
-    
-    .RodapeContatos{
+
+    .RodapeContatos {
         margin-top: 20px;
-    
+
     }
-    
+
     /* --------------------- Fim rodape --------------------- */
 
 
