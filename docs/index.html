@@ -703,17 +703,19 @@
                 <p>Informações obitidas para o cadastro do usuario</p>
                 <pre>
                   {
-                    "Usuario":[
-                      {
-                        "id":0,
-                        "Nome":"",
-                        "foto":"",
-                        "Curso":"",
-                        "Email":"",
-                        "Telefone":"",
-                        "Senha":""
-                      }
-                    ]
+                      "Nome": "",
+                      "Bio": "",
+                      "Foto_perfil": "",
+                      "Dominio": "",
+                      "Origem": "",
+                      "Idade": "",
+                      "Area_de_Atuacao": "",
+                      "Curso": "",
+                      "Telefone": "",
+                      "Email": "",
+                      "Senha": "",
+                      "Grupos": [],
+                      "id": 
                   }
                 </pre>
               </section>
@@ -732,7 +734,6 @@
                                "",
                                ""
                               ],
-                            "Calendário":,
                             "Tarefas":,
                             "Arquivos":,
                             "Plataformas":,
@@ -769,12 +770,12 @@
             <p>Estruturas contidas em Trabalho com as informações de cada integrante pertencente ao grupo</p>
             <pre>
               {
-                "Integrantes":[
-                  {
-                    "id":"",
-                    "nome":""
-                  }
-                ],
+                {
+                  "Status": "",
+                  "Id_Usuario": "",
+                  "Id_Projeto": ,
+                  "id": 
+                },
               }
             </pre>
           </section>
@@ -782,13 +783,15 @@
 
         <section>
           <h5>Estrutura de Dados - Compartilhamento de Documentos</h5>
-          <p>Arquivos contidos em cada trabalho</p>
+          <p>Estrutura de dados dos arquivos contidos em cada trabalho</p>
           <pre>
             {
                 Arquivo":[
                     {
+                    "idGrupo":"",
                     "Nome":"",
-                    "Id":""
+                    "Conteudo":"",
+                    "id": ""
                   }
               ],
             }
@@ -822,11 +825,11 @@
         {
         "Plataformas":[
             {
-              "id":"",
               "Logo":"",
               "Nome_da_plataforma":"",
               "Não_quero_ver":"",
-              "Link":""
+              "Link":"",
+              "id":"",
             }
          ],
         }
@@ -867,19 +870,22 @@
     <h5>Estrutura de Dados - Edição de perfil</h5>
     <p>Uso das informações de cada usuario para sua edição</p>
     <pre>
-      {
-        "Usuario":[
-          {
-            "id":0,
-            "Nome":"",
-            "foto":"",
-            "Curso":"",
-            "Email":"",
-            "Telefone":"",
-            "Senha":""
-          }
-        ]
-      }
+      <pre>
+        {
+            "Nome": "",
+            "Bio": "",
+            "Foto_perfil": "",
+            "Dominio": "",
+            "Origem": "",
+            "Idade": "",
+            "Area_de_Atuacao": "",
+            "Curso": "",
+            "Telefone": "",
+            "Email": "",
+            "Senha": "",
+            "Grupos": [],
+            "id": 
+        }
     </pre>
   </section>
   </section>
@@ -898,7 +904,7 @@
                 <h5>Images:</h5>
                 <ul>
                   <li>Icones reprentativos - <a target="_blank" href="https://fontawesome.com/kits">https://fontawesome.com/kits</a></li>
-                  <li>Logo do Projeto - <a target="_blank" href="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMGCC-TI/daigaku-connect/main/source/logo.png"></a>Logo</li>
+                  <li>Logo do Projeto - <a target="_blank" href="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMGCC-TI/daigaku-connect/main/source/logo.png">https://raw.githubusercontent.com/ICEI-PUC-Minas-PMGCC-TI</a></li>
                   <li>E imagens locais</li>
                 </ul>
               </section>
@@ -906,6 +912,7 @@
               <section>
                 <h5>Fonts:</h5>
                 <ul>
+                  <li>JSONServer - <a target="_blank" href="https://replit.com/@davicandidopucm/Daigaku-Connectjson">https://replit.com/@davicandidopucm/Daigaku-Connectjson</a></li>
                   <li>Cards e estilos Bootstrap - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
                   <li>Icones reprentativos - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
                 </ul>
@@ -915,7 +922,7 @@
                 <h5>Scripts:</h5>
                 <ul>
                   <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
-                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+                  <li>Bootstrap 5.3.3 - <a target="_blank" href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
                 </ul>
               </section>
             </section>
@@ -940,39 +947,82 @@
                   <div class="card">
                     <div class="card-header" id="heading1">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
-                          aria-expanded="false" aria-controls="collapse1">What does royalty free mean?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse1">O que é a plataforma Daigaku-Connect?</a> </h5>
                     </div>
                     <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
-                      <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged. </div>
+                      <div class="card-body">Somos um projeto que tem como objetivo fornecer comunicação gratuita, segura e eficiente para gerenciamento de projetos dentro do ambiente universitário.</div>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-header" id="heading2">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
-                          aria-expanded="false" aria-controls="collapse2">What is a single application?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse2">Sou universitario posso disponibilizar meus projetos na plataforma?</a> </h5>
                     </div>
                     <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
-                      <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life
-                        accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                        proident. Ad vegan excepteur butcher vice lomo. </div>
+                      <div class="card-body"> Claro, todo projeto é sempre bem vindo, além ajudar em sua divulgação você tem a possibilidade de encontrar pessoas interressadas em ajudar no desenvolvimento do seu projeto</div>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-header" id="heading3">
                       <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3"
-                          aria-expanded="false" aria-controls="collapse3">What are some examples of permitted end
-                          products?</a> </h5>
+                          aria-expanded="false" aria-controls="collapse3">Como posso criar um novo projeto?</a> </h5>
                     </div>
                     <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
-                      <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                        essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna
-                        imperdiet. </div>
+                      <div class="card-body"> Basta logar na plataforma, e assim você será direcionado a uma aba onde poderá encontrar projetos de seu interresse ou criar o seu proprio</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Posso convidar colegas de diferentes cursos para um projeto?</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> Sim, você pode, basta seus colegas procurarem pelo seu grupo e solicitar entrada para que possam fazer parte do seu projeto</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Existe um calendário integrado para acompanhar os prazos? E como faço para adicionar tarefas a um projeto?</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> Dentro da pagina de gerenciamento dos seus projetos terá um calendario que ao selecionar alguns dos dia você abrirá uma aba para inclusão de tarefas, na qual poderá adiciona-las ou exclui-las, bem como acompanha-las</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Há suporte para anexar arquivos e documentos às tarefas?</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> Sim, dentro da pagina de gerenciamento dos seus projetos terá uma aba onde você podera incluir arquivos e documentos relacionados ao seu projeto</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Posso integrar o projeto com outras ferramentas como Google Drive ou Microsoft Teams?</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> Claro, na pagina de gerenciamento de projetos também tera em sua disposição uma aba onde se contera plataformas que os integrantes do grupo poderão incluir confome suas vontades</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Existe uma funcionalidade de chat em tempo real?</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> Infelizmente ainda não possuimos esta funcionalidade, mas esta poderá ser uma de nossas atualizações futuras, no entanto você poderá incluir plataformas de chat de sua preferencia, como WhatszApp ou Telegram </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Quem tem acesso aos dados do projeto??</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> Somente o dono e os membros pertencentes ao projeto tem acesso aos dados do mesmo</div>
                     </div>
                   </div>
                 </div>
@@ -990,7 +1040,13 @@
             <div class="alert alert-warning collapse" role="alert" id="collapseReferencias">
               <p>Apresente as referências bibliográficas utilizadas no projeto. Inclua itens como: (1) livros, artigos, tutoriais, etc. utilizados no desenvolvimento da solução; (2) links para sites, blogs, etc. utilizados no desenvolvimento da solução.</p>
             </div>
-            <p>......  COLOQUE AQUI O SEU TEXTO ......</p>
+            <p>PARKER, Geoffrey G.; VAN ALSTYNE, Marshall W.; CHOUDARY, Sangeet Paul. Plataforma: a revolução da estratégia. Alta books, 2019.</p>
+
+            <p>VÍDEO, C. EM. Começa aqui o novo @CursoemVideo de HTML5 e CSS3. Disponível em: https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n. Acesso em: 01 abr. 2024.</p>
+
+            <p>VÍDEO, C. EM. Primeiros passos com Flexbox CSS - @CursoemVideo HTML5 + CSS3. Disponível em: https://www.youtube.com/watch?v=YeGn9nGies0. Acesso em: 05 mai. 2024.</p>
+            
+            <p>CONSOLEVIEW. Calendário Personalizado - HTML5,CSS3 e JavaScript. Disponível em: https://www.youtube.com/watch?v=a815HQ2dwtU. Acesso em: 10 mai. 2024.</p>
           </section>
 
         </div>
