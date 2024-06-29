@@ -1,5 +1,6 @@
-var idLocal = 0;
+
 var qntElementos = 0;
+const idLocal = sessionStorage.getItem('login');
 const dataURL = 'https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev'
 
 /**
@@ -21,9 +22,9 @@ function getBase64(file) {
  * Dados iniciais da database do localstorage, incluindo informações para o usuário de como o site se porta
 */
 function initData() {
-    readData(processData,0);
+   // readData(processData, 1);
 }
-function processData(data,id){
+function processData(data, id) {
     let nome = document.getElementById("name");
     let resume = document.getElementById("resume");
     let tema = document.getElementById("tema");
@@ -32,7 +33,7 @@ function processData(data,id){
     nome.innerHTML = data[id].Nome;
     resume.innerHTML = data[id].Resume;
     console.log(data[id].Área_de_atuação[1])
-    
+
     if (data[id].Área_de_atuação[1] == 'nenhum') {
         tema.innerHTML = data[id].Área_de_atuação[0];
     } else {
@@ -41,25 +42,84 @@ function processData(data,id){
     foto.src = data[id].Foto;
 }
 
+async function fetchProfile(userId) {
+    try {
+        const response = await fetch(`${dataURL}/Usuario/${userId}`);
+        if (!response.ok) {
+            console.error("Erro ao buscar perfil:", response.statusText);
+            return null;
+        }
+        const profile = await response.json();
+        return profile;
+    } catch (error) {
+        console.error("Erro ao buscar perfil:", error);
+        return null;
+    }
+}
+
+
+async function defineContentGrupo(GrupoId) {
+    let perfil = await fetchProfile(idLocal);
+    var bodyContent = null;
+
+    if (perfil.Grupos === null) {
+        bodyContent = JSON.stringify({
+            Grupos: [GrupoId]
+        });
+        console.log(bodyContent);
+    } else {
+        let obj = perfil.Grupos;
+        obj.push(GrupoId);
+        console.log(obj);
+        bodyContent = JSON.stringify({
+            Grupos: obj
+        });
+    }
+    //console.log(perfil.Grupos.length)
+    return bodyContent
+}
+
+async function attGrupos(GrupoId) {
+
+    let headersList = {
+        "Accept": "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        "Content-Type": "application/json"
+    }
+    //var bodyContent = JSON.stringify({ Grupos: GrupoId });
+
+    var bodyContent = await defineContentGrupo(GrupoId)
+
+    let response = await fetch(`${dataURL}/Usuario/${idLocal}`, {
+        method: "PATCH",
+        body: bodyContent,
+        headers: headersList
+    });
+
+    let data = await response.text();
+    console.log(data);
+}
+
 /**
  * Leitura de dados do localStorage
  * @returns objeto lido no localStorage
  */
-function readData(FunctionCallBack,id) {
+function readData(FunctionCallBack, id) {
     fetch(`${dataURL}/Trabalho`)
-                .then((res) => res.json())
-                .then(data => {
-                   // console.log(data)
-                   FunctionCallBack(data,id);
-                    return data;
-                })  
-    
+        .then((res) => res.json())
+        .then(data => {
+            // console.log(data)
+            FunctionCallBack(data, id);
+            return data;
+        })
+
 }
+
 /**
  * Manda para o localstorage qualquer objeto
  * @param {object} dado objeto a ser salvado no localstorage
  */
-function saveData(dado) {
+async function saveData(dado) {
     fetch(`${dataURL}/Trabalho`, {
         method: 'POST',
         headers: {
@@ -69,8 +129,9 @@ function saveData(dado) {
     }).then(response => response.json())
         .then(dado => {
             alert("Projeto criado com sucesso");
+            attGrupos(dado.id);
         })
-        .then(console.log(dado))
+    //.then(console.log(dado))
 }
 
 /**
@@ -86,7 +147,6 @@ function updateData() {
     let picture = localStorage.getItem('img-BASE64');
 
     let newProject = {
-        id: idLocal,
         Foto: picture,
         Nome: strNome,
         Resume: strResume,
@@ -119,7 +179,7 @@ function realTimeUpdate(type) {
             let tipo1 = document.getElementById("tipo1").value;
             let tipo2 = document.getElementById("tipo2").value;
             console.log(tipo2);
-            if (tipo2 == 'nenhum' ) {
+            if (tipo2 == 'nenhum') {
                 tema.innerHTML = tipo1;
             } else {
                 tema.innerHTML = tipo1 + ", " + tipo2;
@@ -140,9 +200,9 @@ function updateImage() {
     })
 }
 
-function load(){
+function load() {
     let opcao = prompt("Qual opcao?");
-    readData(processData,opcao);
+    readData(processData, opcao);
 }
 //document.getElementById("btn-criar").addEventListener('click', updateData());
 
