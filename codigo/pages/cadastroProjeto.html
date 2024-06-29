@@ -32,8 +32,7 @@
                 <ul class="nav-list">
                     <li><a href="/index.html">Inicio</a></li> <!-- Colocar links -->
                     <li><a href="/pages/perfil.html">Perfil</a></li> <!-- Colocar links -->
-                    <li><a href="/pages/ProjetoPage.html">Meus Grupos</a></li> <!-- Colocar links -->
-                    <li><a href="/pages/cadastroProjeto.html">Novo Grupo</a></li> <!-- Colocar links -->
+                    <li><a href="/pages/meusGrupos.html">Meus Grupos</a></li> <!-- Colocar links -->
 
                     <li><a href="/"><img class="imgUsuario"
                                 src="/assets/images/logo.png"
@@ -50,16 +49,13 @@
         <div id="preview-card">
             <!-- Mostrar a foto 1/3 do card -->
             <div id="foto-div">
-                <img id="foto-preview" alt="Foto do projeto" src="">
+                <img id="foto-preview" alt="Foto do projeto" src="/assets/images/Image_placeholder.png">
             </div>
             <!-- Mostrar os dados: Nome, Resumo e temas -->
             <div class="dados-preview">
-                <p><strong>Nome: </strong><span id="name">Lorem ipsum dolor sit amet.</span> </p>
-                <p><strong>Resumo: </strong> <span id="resume">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ut eligendi
-                        repellat, doloribus labore eaque voluptatem! Similique consequatur veritatis temporibus
-                        esse?</span></p>
-                <p><strong>Tema:</strong> <span id="tema">TI</span></p>
+                <p><strong>Nome: </strong><span id="name">Nesse campo fica o nome do seu projeto</span> </p>
+                <p><strong>Resumo: </strong> <span id="resume">Aqui, ficará todo o resumo do seu projeto</span></p>
+                <p><strong>Tema:</strong> <span id="tema">Por último, o tema do seu grupo</span></p>
             </div>
         </div>
 
@@ -99,7 +95,7 @@
                     <label class="seletor" for="TipoSecundario"> Tema secundário: </label>
                     <select name="TipoSecundario" class="seletor" id="tipo2" form="formulario"
                         onblur="realTimeUpdate('tema')">
-                        <option value="nenhum">Nenhum</option>
+                        <option value="">Nenhum</option>
                         <option value="TI">TI</option>
                         <option value="Jurídico">Jurídico</option>
                         <option value="Saúde">Saúde</option>
