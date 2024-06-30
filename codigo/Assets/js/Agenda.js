@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const param = new URLSearchParams(location.search);
     const idPage = param.get("id");
@@ -13,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const diaSelecionadoInput = document.createElement("input"); // Crie um input para guardar o dia
     const Abatarefas = document.querySelector(".contemTarefa .tarefasContida ");
     const limparBtn = document.querySelector("#Botao-limpar");
+
+    const paramAgenda = new URLSearchParams(location.search);
+    const idPageAgenda = paramAgenda.get("id");
   
     const months = [
       "Jan",
@@ -138,6 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   
       calendario.Calendário[dia].push({
+        idGrupo: idPageAgenda,
         Nome_da_Tarefa: nomeTarefa,
         Descrição_da_Tarefa: descricaoTarefa,
         Feito: false,
