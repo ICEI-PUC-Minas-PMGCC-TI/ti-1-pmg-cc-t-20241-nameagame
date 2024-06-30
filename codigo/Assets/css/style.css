@@ -695,7 +695,7 @@
         align-items: center;
         margin-bottom: 20px;
         padding-bottom: 20px;
-        border-bottom: 2px solid #ccc;
+            border-bottom: 2px solid #ccc;
     }
 
     .calendar .header .month {
@@ -721,8 +721,8 @@
         align-items: center;
         justify-content: center;
         border-radius: 5px;
-        color: #fff;
-        background-color: var(--cor-secundaria);
+        color: black;
+        background-color: white;
         font-size: 14px;
         /* Diminuído de 16px */
         cursor: pointer;
@@ -743,15 +743,14 @@
     .weekdays .day {
         width: calc(100% / 7 - 10px);
         text-align: center;
-        font-size: 14px;
-        /* Diminuído de 16px */
+        font-size: 14px; /* Diminuído de 16px */
         font-weight: 600;
     }
 
     .days {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
     }
 
     .days .day {
@@ -772,13 +771,13 @@
 
     .days .day:not(.next):not(.prev):hover {
         color: #fff;
-        background-color: var(--cor-primaria);
+        background-color: black;
         transform: scale(1.05);
     }
 
     .days .day.today {
         color: #fff;
-        background-color: var(--cor-primaria);
+        background-color:#ff000097;
     }
 
     .days .day.next,
@@ -797,7 +796,7 @@
     }
 
     .days .day.selected {
-        background-color: red;
+        background-color: rgb(0, 0, 0);
         color: white;
     }
 

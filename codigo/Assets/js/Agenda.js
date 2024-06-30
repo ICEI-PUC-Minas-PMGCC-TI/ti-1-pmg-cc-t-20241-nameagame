@@ -138,7 +138,7 @@ const idPageAgenda = paramAgenda.get("id");
 
           if(tarefa.dia == dia && tarefa.idGrupo == idPageAgenda){
             // Criar o elemento da tarefa
-            const tarefaElement = document.createElement("div");
+            const tarefaElement = document.createElement('div');
             tarefaElement.classList.add("card");
             tarefaElement.style.width = "20rem";
 
