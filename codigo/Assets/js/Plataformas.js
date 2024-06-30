@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     LimpaPlataformasBtn.addEventListener("click", LimpaPlataformas);
     AbaIncluirBtn.addEventListener("click", AbrirAba);
   
-    renderizarPlataformas();   // Chame renderizarPlataformas() para carregar as plataformas do JSONServer
+    renderizarPlataformas();   // Chame renderizarPlataformas() para carregar as plataformas do localStorage
   
     // Função para salvar plataforma
     function SalvarPlataforma() {

@@ -123,13 +123,13 @@ function loginB(data) {
     } else {
         Id = sessionStorage.getItem('login') - 1 //Id nao comeca do 0, por isso tirar 1 unidade;
         if(data[Id].Grupos === null){
-            alert(`Login Feito: ${Id} Grupos = ${data[Id].Grupos}`);
+           // alert(`Login Feito: ${Id} Grupos = ${data[Id].Grupos}`);
            (window.location.href = '/pages/pesquisa.html');
         } else if((data[Id].Grupos.length === 1)) {
-            alert(`Login Feito: ${Id} Grupos = ${data[Id].Grupos}`);
+          //  alert(`Login Feito: ${Id} Grupos = ${data[Id].Grupos}`);
             (window.location.href = '/pages/ProjetoPage.html');
         } else {
-            alert(`Login Feito: ${Id} Mais de um grupo`);
+          //  alert(`Login Feito: ${Id} Mais de um grupo`);
             (window.location.href = '/pages/meusGrupos.html');
         }
       

@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         rejectButton.className = "btn btn-danger";
         rejectButton.textContent = "Recusar";
         rejectButton.addEventListener("click", function () {
-            rejectSolicitation(userId, row);
+        rejectSolicitation(solicitationId, row);
         });
 
         cellActions.appendChild(acceptButton);
@@ -143,14 +143,13 @@ document.addEventListener("DOMContentLoaded", function () {
        @param userId = ID do usuário
        @param row = Linha em que a solicitação se encontra
     */
-    async function rejectSolicitation(userId, row) {
+    async function rejectSolicitation(solicitationId, row) {
         try {
-            const response = await fetch(`${dataURL}/solicitacao/${userId}`, {
+            const response = await fetch(`${dataURL}/solicitacao/${solicitationId}`, {
                 method: 'DELETE'
             });
             if (response.ok) {
                 row.remove();
-                alert(`Solicitação recusada. ID do usuário: ${userId}`);
             }
         } catch (error) {
             console.error("Erro ao recusar solicitação:", error);
@@ -170,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 solicitations.forEach(solicitation => {
                     usuarios.forEach(usuario => {
                         if (solicitation.Id_Usuario === usuario.id) {
-                            addSolicitation(usuario.Foto, usuario.Nome, solicitation.text,
+                            addSolicitation(usuario.Foto_perfil, usuario.Nome, solicitation.text,
                                 usuario.id, solicitation.Id_Projeto, solicitation.id);
                         }
                     })
