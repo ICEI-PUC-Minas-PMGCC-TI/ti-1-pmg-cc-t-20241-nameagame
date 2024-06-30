@@ -1,0 +1,37 @@
+Roteiro do vídeo da entega do sprint 4 de TIAW
+  (Comentários antes necessários, direcionados aos atores)
+--Definir quem é quem entre as pessoas 1 e 2. 
+-- Pessoa 1 => Pessoa que vai falar dos slides 
+-- Pessoa 2=> Pessoa que vai mexer na funcionalidade do Site.
+--Todo o texto que estiver entre *dois asteriscos* mostra uma ação a ser efetuada.
+--Tudo entre \Essa simbologia/ é um elemento da página.
+                        ---------Roteiro do vídeo em si---------
+
+
+[Pessoa 1] : Olá. Bom dia, ou Tarde ou noite. Este é o vídeo da entrega do Sprint 4 de TI 1 : Front-End. O objetivo desse vídeo é mostrar um pouco da nossa plataforma, quais foram os objetivos e pensamentos por trás dela.
+ Então, o nome da nossa solução é Daigaku Connect, e a ideia da plataforma é de ser uma solução para procura, criação e manutenção de projetos e grupos universitários.
+
+[Pessoa 2 ] : Então, aqui nós estamos na página inicial do Daigaku Connect.Vamos fingir que eu, um dos criadores, não tenho uma conta. Então vamos lá, vou aqui criar minha conta.
+Criar conta. Ok, agora, vamos mostrar algumas das funcionalidades. Tem aqui a parte de pesquisa do app *Mostrar funcionalidade de pesquisa *, aí aqui, podemos pedir para entrar no grupo. // Olhar questão da psequisa de usuário.
+[Pessoa 2 ]: Ah, mas agora eu tenho que terminar de criar meu perfil tb. *Clicar em \Perfil/ * Deixa eu vir aqui. Como vocês podem ver, eu ainda não tenho nada aqui, então vou preencher com os dados. Vou colocar aqui uma foto, e escrever as coisas aqui.
+
+
+[Pessoa 1]: Eu, que sou o dono do Grupo mostrado, recebi aqui a solicitação de entrada de pessoa do grupo. Se eu não quiser, é só clicar aqui indicar com o mouse em \botão de recusar/, mas como esse não é o caso, Clicar no \botão de aceitar/. Como vocês podem ver, agora ele está dentro do grupo, tendo acesso à todos os arquivos, datas e afins.
+
+[Pessoa 2 ]: Agora, vamos ver as coisas dentro do grupo. Temos aqui algumas tarefas, datas, metas , a possibilidade de fazer o UPLOAD de arquivos.
+[Pessoa 2 ]: Acho que essas são todas as funcionalidades que temos no nosso site.
+[Pessoa 1 ]: Agora, no final desse trabalho, eu fico me perguntando: o que será que eu aprendi depois de todo esse tempo? Então, olhando para trás, acho que consigo citar 3 tópicos que eu aprendi:
+-Aprendi muito a usar a ferramenta GitHub, amplamente utilizada no mercado, e que é uma ótima adição de experiência no nosso currículo.
+-Aprendi também a lidar com adversidades e me adaptar a isso. Tivemos uma perda de pessoal em um momento crítico do projeto, e tivemos que nos adaptar para poder lidar com essas perdas.
+-Por último, toda a abientação e a metdologia que realmente simulam as empresas é uma ótima experiência, mesmo que seja apenas uma simulação.
+
+
+/*
+Quaisquer comentários so me falar :)
+*/
+
+
+--------------------Subtópico: Roteiro -> Readme.txt --------------------------------
+
+O documento acima é um protótipo, e apenas uma noção de como será a "Mecânica" do vídeo, dando mais liberdade para os responsáveis pela atuação e pela edição do vídeo.
+-Alexandre Duarte van de Graaf -- 856167
