@@ -127,7 +127,7 @@ function loginB(data) {
            (window.location.href = '/pages/pesquisa.html');
         } else if((data[Id].Grupos.length === 1)) {
           //  alert(`Login Feito: ${Id} Grupos = ${data[Id].Grupos}`);
-            (window.location.href = '/pages/ProjetoPage.html');
+            (window.location.href = `/pages/ProjetoPage.html?id=${data[Id].Grupos[0]}`);
         } else {
           //  alert(`Login Feito: ${Id} Mais de um grupo`);
             (window.location.href = '/pages/meusGrupos.html');
