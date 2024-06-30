@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const dataURL = 'https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev';
 
+const paramPlataformas = new URLSearchParams(location.search);
+const idPagePlataformas = param.get("id");
+
   /**
    * Manda para o JSON server qualquer objeto
    * @param {object} dado objeto a ser salvado no JSON server
@@ -106,6 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const Linkdalogo = document.getElementById("Linkdalogo").value;
 
     const novaPlataforma = {
+      idGrupo: idPagePlataformas,
       Logo: Linkdalogo,
       Nome_da_plataforma: Nomedaplataforma,
       Não_quero_ver: false,
@@ -153,19 +157,22 @@ document.addEventListener("DOMContentLoaded", () => {
     divContemPlataformas.innerHTML = ''; // Limpa o conteúdo antes de renderizar
 
     data.forEach(plataforma => {
-      const plataformaDiv = document.createElement('div');
-      plataformaDiv.classList.add('plataforma'); // Adicione uma classe para estilizar
 
-      plataformaDiv.innerHTML = `
-        <a href="${plataforma.Link}" target="_blank" ><div class="card">
-          <img src="${plataforma.Logo}" alt="${plataforma.Nome_da_plataforma}">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">${plataforma.Nome_da_plataforma}</li>
-          </ul>
-        </div></a>
-      `;
+      if(plataforma.idGrupo == idPagePlataformas){
+        const plataformaDiv = document.createElement('div');
+        plataformaDiv.classList.add('plataforma'); // Adicione uma classe para estilizar
 
-      divContemPlataformas.appendChild(plataformaDiv);
+        plataformaDiv.innerHTML = `
+          <a href="${plataforma.Link}" target="_blank" ><div class="card">
+            <img src="${plataforma.Logo}" alt="${plataforma.Nome_da_plataforma}">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">${plataforma.Nome_da_plataforma}</li>
+            </ul>
+          </div></a>
+        `;
+
+        divContemPlataformas.appendChild(plataformaDiv);
+      }
     });
   }
 });
