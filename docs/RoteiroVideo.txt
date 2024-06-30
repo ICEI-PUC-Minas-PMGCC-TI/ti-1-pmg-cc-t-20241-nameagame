@@ -20,10 +20,10 @@ Criar conta. Ok, agora, vamos mostrar algumas das funcionalidades. Tem aqui a pa
 
 [Pessoa 2 ]: Agora, vamos ver as coisas dentro do grupo. Temos aqui algumas tarefas, datas, metas , a possibilidade de fazer o UPLOAD de arquivos.
 [Pessoa 2 ]: Acho que essas são todas as funcionalidades que temos no nosso site.
-[Pessoa 1 ]: Agora, no final desse trabalho, eu fico me perguntando: o que será que eu aprendi depois de todo esse tempo? Então, olhando para trás, acho que consigo citar 3 tópicos que eu aprendi:
--Aprendi muito a usar a ferramenta GitHub, amplamente utilizada no mercado, e que é uma ótima adição de experiência no nosso currículo.
--Aprendi também a lidar com adversidades e me adaptar a isso. Tivemos uma perda de pessoal em um momento crítico do projeto, e tivemos que nos adaptar para poder lidar com essas perdas.
--Por último, toda a abientação e a metdologia que realmente simulam as empresas é uma ótima experiência, mesmo que seja apenas uma simulação.
+[Pessoa 1 ]: Agora, no final desse trabalho, eu fico me perguntando: o que será que eu aprendemos depois de todo esse tempo? Então, olhando para trás, acho que podemos destacar 3:
+-Aprendemos muito a usar a ferramenta GitHub, amplamente utilizada no mercado, e que é uma ótima adição de experiência no nosso currículo.
+-Aprendemos também a lidar com adversidades e nos adaptar a isso. Tivemos uma perda de pessoal em um momento crítico do projeto, e tivemos que nos adaptar para poder lidar com essas perdas.
+-Por último, toda a abientação e a metdologia que realmente simulam as empresas é uma ótima experiência, mesmo que o intuito seja apenas de uma simulação.
 
 
 /*
