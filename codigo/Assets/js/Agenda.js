@@ -46,17 +46,28 @@ const idPageAgenda = paramAgenda.get("id");
    */
   // Função para excluir as tarefas do dia
   function DeleteTarefasDia(dia) {
-    fetch(`${dataURL}/Tarefas/${dia}`, {
-      method: 'DELETE'
+    fetch(`${dataURL}/Tarefas?dia=${dia}`)
+    .then((res) => res.json())
+    .then(data => {
+
+      data.forEach((data) => {
+
+        fetch(`${dataURL}/Tarefas/${data.id}`, {
+          method: 'DELETE'
+        })
+        .then(response => {
+          if (response.ok) {
+            console.log(`Tarefas do dia ${dia} excluídas com sucesso.`);
+            readDataAllTarefas(displayTarefas, dia); // Atualiza a lista de tarefas após a exclusão
+          } else {
+            console.error('Erro ao excluir tarefas:', response.statusText);
+          }
+
     })
-    .then(response => {
-      if (response.ok) {
-        console.log(`Tarefas do dia ${dia} excluídas com sucesso.`);
-        readDataAllTarefas(displayTarefas, dia); // Atualiza a lista de tarefas após a exclusão
-      } else {
-        console.error('Erro ao excluir tarefas:', response.statusText);
-      }
     })
+
+    })
+
     .catch(error => {
       console.error('Erro ao excluir tarefas:', error);
     });
