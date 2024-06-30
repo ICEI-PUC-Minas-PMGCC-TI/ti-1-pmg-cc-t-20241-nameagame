@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const dataURL = 'https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev';
 
+const paramAgenda = new URLSearchParams(location.search);
+const idPageAgenda = paramAgenda.get("id");
+
   /**
    * Manda para o JSON server qualquer objeto
    * @param {object} dado objeto a ser salvado no JSON server
@@ -98,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Adicionamar uma propriedade dinâmica ao objeto `novaTarefa` // A fazer
     
     let novaTarefa = { // .push() // A fazer
-        id: dia,  
+        idGrupo: idPageAgenda,
         dia: dia,
         nome: nomeTarefa,
         descricao: descricaoTarefa,
@@ -119,38 +122,43 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(`https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev/Tarefas?dia=${dia}`)
       .then(response => response.json())
       .then(tarefas => {
+        
         tarefas.forEach(tarefa => {
-          // Criar o elemento da tarefa
-          const tarefaElement = document.createElement("div");
-          tarefaElement.classList.add("card");
-          tarefaElement.style.width = "20rem";
 
-          // Criar os elementos internos
-          const cardBody = document.createElement("div");
-          cardBody.classList.add("card-body");
+          if(tarefa.dia == dia && tarefa.idGrupo == idPageAgenda){
+            // Criar o elemento da tarefa
+            const tarefaElement = document.createElement("div");
+            tarefaElement.classList.add("card");
+            tarefaElement.style.width = "20rem";
 
-          const cardTitle = document.createElement("h5");
-          cardTitle.classList.add("card-title");
-          cardTitle.innerHTML = `<strong>${tarefa.nome}</strong>`;
+            // Criar os elementos internos
+            const cardBody = document.createElement("div");
+            cardBody.classList.add("card-body");
 
-          const cardText = document.createElement("p");
-          cardText.classList.add("card-text");
-          cardText.textContent = tarefa.descricao;
+            const cardTitle = document.createElement("h5");
+            cardTitle.classList.add("card-title");
+            cardTitle.innerHTML = `<strong>${tarefa.nome}</strong>`;
 
-          // Adicionar os elementos filhos
-          cardBody.appendChild(cardTitle);
-          cardBody.appendChild(cardText);
+            const cardText = document.createElement("p");
+            cardText.classList.add("card-text");
+            cardText.textContent = tarefa.descricao;
 
-          // Adicionar o cardBody à tarefaElement
-          tarefaElement.appendChild(cardBody);
+            // Adicionar os elementos filhos
+            cardBody.appendChild(cardTitle);
+            cardBody.appendChild(cardText);
 
-          // Adicionar a tarefa à página
-          Abatarefas.appendChild(tarefaElement);
+            // Adicionar o cardBody à tarefaElement
+            tarefaElement.appendChild(cardBody);
+
+            // Adicionar a tarefa à página
+            Abatarefas.appendChild(tarefaElement);
+          }
         });
       })
       .catch(error => {
         console.error('Erro ao carregar tarefas:', error);
       });
+      
   }
 
   // Função para alternar entre modo de edição e visualização

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dataURL = 'https://d48c2490-3e8e-404c-9d46-de2c267c8b7d-00-pkkcdctxvc17.spock.replit.dev';
 
 const paramPlataformas = new URLSearchParams(location.search);
-const idPagePlataformas = param.get("id");
+const idPagePlataformas = paramPlataformas.get("id");
 
   /**
    * Manda para o JSON server qualquer objeto
