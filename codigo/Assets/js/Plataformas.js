@@ -38,7 +38,7 @@ const idPagePlataformas = paramPlataformas.get("id");
    * Apaga do JSON server os objetos
    */
   function DeleteAllPlataformas() {
-    fetch(`${dataURL}/Plataformas`)
+    fetch(`${dataURL}/Plataformas/${idPagePlataformas}`)
       .then(response => response.json())
       .then(data => {
         const deletePromises = data.map(plataforma => {
